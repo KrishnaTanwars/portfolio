@@ -48,26 +48,20 @@ ${certifications.map(c => `• ${c.title} — ${c.issuer} (${c.period})`).join('
   return (
     <section id="resume" className="section resume-section">
       <div className="container">
-        <div className="section-header">
-          <span className="section-tag">Curriculum Vitae</span>
-          <h2 className="section-title">Resume & Qualifications</h2>
-          <p className="section-subtitle">
-            Review my complete engineering credentials directly below, or download a local copy of my official resume.
-          </p>
-        </div>
-
-        {/* Clean, Non-Confusing Single-Option Action Bar */}
-        <div className="resume-toolbar-card card">
-          <div className="resume-toolbar-info">
-            <span className="resume-format-badge">Official CV Document</span>
-            <span className="resume-format-meta">Verified B.Tech CSE & Software Engineering Credentials</span>
+        <div className="section-header resume-header-row">
+          <div>
+            <span className="section-tag">Curriculum Vitae</span>
+            <h2 className="section-title">Resume & Qualifications</h2>
+            <p className="section-subtitle">
+              Review my complete engineering credentials directly below, or download a local copy of my official resume.
+            </p>
           </div>
 
-          <div className="resume-action-buttons-row">
+          <div className="resume-download-btn-wrapper">
             <a
               href="./resume.pdf"
               download="Krishna_Tanwar_Resume.pdf"
-              className="btn btn-primary btn-sm"
+              className="btn btn-primary"
               aria-label="Download Krishna Tanwar resume PDF"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
