@@ -87,6 +87,20 @@ Date:   Recent Engineering Sprint
     }
   };
 
+  const handleScrollToResume = (e) => {
+    e.preventDefault();
+    const target = document.getElementById('resume');
+    if (target) {
+      const topOffset = 70;
+      const elementPosition = target.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - topOffset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const handleScrollToContact = (e) => {
     e.preventDefault();
     const target = document.getElementById('contact');
@@ -143,17 +157,30 @@ Date:   Recent Engineering Sprint
               </svg>
             </a>
 
-            <button 
-              type="button" 
+            <a 
+              href="#resume" 
               className="btn btn-secondary"
+              onClick={handleScrollToResume}
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+              View Resume & PDF
+            </a>
+
+            <button
+              type="button"
+              className="btn btn-outline"
               onClick={onOpenResume}
+              aria-label="Download or preview resume modal"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                 <polyline points="7 10 12 15 17 10"></polyline>
                 <line x1="12" y1="15" x2="12" y2="3"></line>
               </svg>
-              Download Resume (PDF)
+              Download PDF
             </button>
 
             <a

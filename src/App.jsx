@@ -6,6 +6,7 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Education from './components/Education';
+import ResumeSection from './components/ResumeSection';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ResumeModal from './components/ResumeModal';
@@ -35,6 +36,7 @@ export default function App() {
         <Projects />
         <Skills />
         <Education />
+        <ResumeSection onOpenModal={handleOpenResume} />
         <Contact />
       </main>
 
