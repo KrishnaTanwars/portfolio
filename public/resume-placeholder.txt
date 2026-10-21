@@ -1,0 +1,21 @@
+========================================================================
+RESUME INSTRUCTIONS FOR KRISHNA TANWAR
+========================================================================
+
+To enable direct 1-click PDF download on your portfolio website:
+
+1. Name your compiled resume PDF file exactly:
+   resume.pdf
+
+2. Place it right here in this folder:
+   public/resume.pdf
+
+3. Commit and push the file to your repository:
+   git add public/resume.pdf
+   git commit -m "Add official resume PDF"
+   git push origin main
+
+Once uploaded, the portfolio's smart resume handler will automatically
+detect the PDF and offer direct one-click downloads to recruiters!
+In the meantime, the website safely displays a friendly modal guiding
+recruiters to request the resume directly via email or LinkedIn.
