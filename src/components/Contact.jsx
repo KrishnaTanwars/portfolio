@@ -26,12 +26,6 @@ export default function Contact() {
     setTimeout(() => setToastMessage(''), 3000);
   };
 
-  const handleSendEmail = (e) => {
-    e.preventDefault();
-    const mailtoUrl = `mailto:${contactInfo.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
-    window.location.href = mailtoUrl;
-  };
-
   return (
     <section id="contact" className="section contact-section">
       <div className="container">
@@ -151,7 +145,7 @@ export default function Contact() {
               <div className="composer-header">
                 <span className="composer-badge">Quick Message Composer</span>
                 <h4 className="composer-title">Send a Quick Dispatch</h4>
-                <p className="composer-sub">Select a preset or customize your message to launch directly into your email client.</p>
+                <p className="composer-sub">Select a preset or customize your message, then copy it directly to your clipboard.</p>
               </div>
 
               {/* Template Buttons */}
@@ -194,22 +188,18 @@ export default function Contact() {
                 </div>
 
                 <div className="composer-actions">
-                  <button type="submit" className="btn btn-primary">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <line x1="22" y1="2" x2="11" y2="13"></line>
-                      <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                    </svg>
-                    Send via Email Client
-                  </button>
-
                   <button
                     type="button"
-                    className="btn btn-secondary"
+                    className="btn btn-primary"
                     onClick={() => {
                       navigator.clipboard.writeText(`Subject: ${subject}\n\n${message}`);
                       showToast('Subject & message copied to clipboard!');
                     }}
                   >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
                     Copy Message Text
                   </button>
                 </div>
