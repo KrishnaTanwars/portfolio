@@ -2,49 +2,6 @@ import React from 'react';
 import { personalInfo, experiences, projects, skillCategories, educationInfo, certifications, contactInfo } from '../data/portfolioData';
 
 export default function ResumeSection() {
-  const plainTextResume = `KRISHNA TANWAR
-Software Developer | Python | SQL | AI/ML | Business Intelligence
-Email: ${contactInfo.email} | LinkedIn: ${contactInfo.linkedin} | GitHub: ${contactInfo.github}
-
-==================================================
-PROFESSIONAL SUMMARY
-==================================================
-${personalInfo.shortBio}
-
-==================================================
-EDUCATION
-==================================================
-${educationInfo.institution}
-${educationInfo.degree} in ${educationInfo.major} (${educationInfo.specialization})
-${educationInfo.period}
-Core Coursework: ${educationInfo.focusAreas.join(', ')}
-
-==================================================
-PROFESSIONAL EXPERIENCE
-==================================================
-${experiences.map(exp => `${exp.role} | ${exp.company} (${exp.period})
-${exp.description.map(d => `• ${d}`).join('\n')}
-Technologies: ${exp.technologies.join(', ')}`).join('\n\n')}
-
-==================================================
-KEY TECHNICAL PROJECTS
-==================================================
-${projects.map(p => `${p.title} (${p.categoryLabel})
-${p.description}
-Technologies: ${p.technologies.join(', ')}
-Repo: ${p.repoUrl}`).join('\n\n')}
-
-==================================================
-TECHNICAL SKILLS
-==================================================
-${skillCategories.map(cat => `${cat.category}: ${cat.skills.map(s => `${s.name} (${s.level})`).join(', ')}`).join('\n')}
-
-==================================================
-VERIFIED CERTIFICATIONS
-==================================================
-${certifications.map(c => `• ${c.title} — ${c.issuer} (${c.period})`).join('\n')}
-`;
-
   return (
     <section id="resume" className="section resume-section">
       <div className="container">

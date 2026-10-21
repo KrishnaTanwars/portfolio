@@ -26,6 +26,12 @@ export default function Contact() {
     setTimeout(() => setToastMessage(''), 3000);
   };
 
+  const handleCopyMessage = (e) => {
+    if (e) e.preventDefault();
+    navigator.clipboard.writeText(`Subject: ${subject}\n\n${message}`);
+    showToast('Subject & message copied to clipboard!');
+  };
+
   return (
     <section id="contact" className="section contact-section">
       <div className="container">
@@ -162,7 +168,7 @@ export default function Contact() {
                 ))}
               </div>
 
-              <form onSubmit={handleSendEmail} className="composer-form">
+              <form onSubmit={handleCopyMessage} className="composer-form">
                 <div className="form-group">
                   <label htmlFor="contact-subject" className="form-label">Subject</label>
                   <input
@@ -189,12 +195,8 @@ export default function Contact() {
 
                 <div className="composer-actions">
                   <button
-                    type="button"
+                    type="submit"
                     className="btn btn-primary"
-                    onClick={() => {
-                      navigator.clipboard.writeText(`Subject: ${subject}\n\n${message}`);
-                      showToast('Subject & message copied to clipboard!');
-                    }}
                   >
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                       <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>

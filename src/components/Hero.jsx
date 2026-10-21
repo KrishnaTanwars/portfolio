@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { personalInfo } from '../data/portfolioData';
 
-export default function Hero({ onOpenResume }) {
+export default function Hero() {
   const [activeTab, setActiveTab] = useState('python'); // 'python' | 'terminal' | 'json'
   const [copiedCode, setCopiedCode] = useState(false);
   const [activeCommand, setActiveCommand] = useState('info');
