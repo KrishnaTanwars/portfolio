@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { contactInfo, personalInfo } from '../data/portfolioData';
+import { contactInfo } from '../data/portfolioData';
 
 export default function Contact() {
   const [copiedEmail, setCopiedEmail] = useState(false);

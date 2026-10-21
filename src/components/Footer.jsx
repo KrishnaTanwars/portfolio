@@ -1,8 +1,9 @@
 import React from 'react';
 import { personalInfo } from '../data/portfolioData';
 
+const CURRENT_YEAR = new Date().getFullYear();
+
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
 
   const handleScrollToTop = () => {
     window.scrollTo({
@@ -17,7 +18,7 @@ export default function Footer() {
         <div className="footer-left">
           <span className="footer-brand">{personalInfo.name}</span>
           <p className="footer-copy">
-            © {currentYear} Krishna Tanwar. Built for performance, accessibility, and clean engineering.
+            © {CURRENT_YEAR} Krishna Tanwar. Built for performance, accessibility, and clean engineering.
           </p>
         </div>
 

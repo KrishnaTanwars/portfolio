@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { personalInfo, educationInfo } from '../data/portfolioData';
+import { personalInfo } from '../data/portfolioData';
 
 export default function ResumeModal({ isOpen, onClose }) {
   const [activeTab, setActiveTab] = useState('download'); // 'download' | 'preview'
