@@ -133,7 +133,7 @@ export default function Navbar({ onOpenResume }) {
 
           <button 
             type="button" 
-            className="btn btn-outline btn-sm"
+            className="btn btn-outline btn-sm desktop-resume-btn"
             onClick={onOpenResume}
             aria-label="Download or Request Resume"
           >

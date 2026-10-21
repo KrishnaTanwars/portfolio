@@ -8,7 +8,7 @@
 export const personalInfo = {
   name: "Krishna Tanwar",
   headline: "Software Developer | Python | SQL | AI/ML",
-  location: "Mathura, Uttar Pradesh, India",
+  location: "India",
   email: "kstanwar0000@gmail.com",
   github: "https://github.com/KrishnaTanwars",
   linkedin: "https://linkedin.com/in/krishnatanwars",
@@ -17,7 +17,7 @@ export const personalInfo = {
   shortBio:
     "I'm a computer science engineering student and software developer focused on building practical backend applications, working with relational databases, and solving real-world engineering challenges. My experience spans software development, database design, business intelligence, and applied AI/ML systems.",
   aboutParagraphs: [
-    "I am currently pursuing my B.Tech in Computer Science Engineering with a specialization in Artificial Intelligence and Machine Learning at GLA University, Mathura (expected graduation in 2027). My core engineering focus is on software development, backend architectures, and database-driven applications.",
+    "I am currently pursuing my B.Tech in Computer Science Engineering with a specialization in Artificial Intelligence and Machine Learning at GLA University (expected graduation in 2027). My core engineering focus is on software development, backend architectures, and database-driven applications.",
     "With a solid foundation in Python, Java, and SQL, I enjoy designing clean backend logic, structuring efficient relational databases (MySQL, PostgreSQL), and creating scalable systems. My experience bridges software engineering and data analytics—enabling me to understand both the operational backend and the analytical layers of enterprise platforms.",
     "Currently, I work as a Graduate Engineer Trainee at SMAAC Net Solutions, where I apply software engineering practices and collaborate on enterprise systems. Previously, as a Data Analyst Intern at AtliQ Technologies, I transformed transactional datasets into actionable business intelligence dashboards using Power BI and SQL.",
     "I am actively seeking software developer, Python developer, and backend engineering opportunities where I can contribute to high-impact products, write robust code, and continue expanding my engineering skillset."
@@ -291,7 +291,7 @@ export const certifications = [
 
 export const educationInfo = {
   institution: "GLA University",
-  location: "Mathura, Uttar Pradesh, India",
+  location: "India",
   degree: "Bachelor of Technology (B.Tech)",
   major: "Computer Science and Engineering",
   specialization: "Artificial Intelligence and Machine Learning (AI/ML)",
@@ -309,7 +309,7 @@ export const contactInfo = {
   email: "kstanwar0000@gmail.com",
   linkedin: "https://linkedin.com/in/krishnatanwars",
   github: "https://github.com/KrishnaTanwars",
-  location: "Mathura, Uttar Pradesh, India (Open to Relocation / Remote)",
+  location: "India (Open to Relocation / Remote)",
   headline: "Let's build something practical together",
   subtext:
     "I'm open to early-career software developer, backend engineer, and Python developer roles. Whether you have an open position, an exciting engineering project, or want to discuss technology, I'd love to connect.",

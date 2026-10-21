@@ -165,7 +165,6 @@ html_content = """<!DOCTYPE html>
   <div class="name">KRISHNA TANWAR</div>
   <div class="tagline">Software Developer | Python & Backend Engineering | Relational Databases & SQL | AI/ML</div>
   <div class="contact-bar">
-    <span>📍 Mathura, UP, India</span>
     <span>✉️ <a href="mailto:kstanwar0000@gmail.com">kstanwar0000@gmail.com</a></span>
     <span>💼 <a href="https://linkedin.com/in/krishnatanwars">linkedin.com/in/krishnatanwars</a></span>
     <span>💻 <a href="https://github.com/KrishnaTanwars">github.com/KrishnaTanwars</a></span>
@@ -179,7 +178,7 @@ html_content = """<!DOCTYPE html>
       <span class="item-title">Bachelor of Technology (B.Tech) — Computer Science & Engineering</span>
       <span class="item-date">2023 – 2027 (Expected)</span>
     </div>
-    <div class="item-subtitle">GLA University, Mathura · Specialization in Artificial Intelligence & Machine Learning (AI/ML)</div>
+    <div class="item-subtitle">GLA University · Specialization in Artificial Intelligence & Machine Learning (AI/ML)</div>
     <ul>
       <li>Core Coursework: Data Structures & Algorithms, Object-Oriented Programming (Java/Python), Database Management Systems (SQL), Applied Machine Learning, Operating Systems & Computer Networks.</li>
     </ul>
@@ -300,8 +299,9 @@ edge_path = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
 
 cmd = [
     edge_path,
-    "--headless",
+    "--headless=new",
     "--disable-gpu",
+    "--no-pdf-header-footer",
     f"--print-to-pdf={output_pdf}",
     temp_html_path
 ]

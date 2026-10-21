@@ -132,7 +132,7 @@ export default function ResumeModal({ isOpen, onClose }) {
                     <li><strong>SMAAC Net Solutions:</strong> Graduate Engineer Trainee</li>
                     <li><strong>AtliQ Technologies:</strong> Data Analyst Intern</li>
                     <li><strong>GLA University:</strong> B.Tech CSE (AI/ML) '27</li>
-                    <li><strong>Location:</strong> Mathura, UP, India (Open to Remote / Relocation)</li>
+                    <li><strong>Availability:</strong> Open to Remote / Relocation</li>
                   </ul>
                 </div>
               </div>

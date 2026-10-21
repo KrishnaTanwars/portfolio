@@ -80,7 +80,7 @@ export default function About() {
                 <span className="cred-icon">🎓</span>
                 <div>
                   <strong>B.Tech in Computer Science Engineering (AI/ML)</strong>
-                  <p>GLA University, Mathura · Expected Graduation: 2027</p>
+                  <p>GLA University · Expected Graduation: 2027</p>
                 </div>
               </div>
               <div className="credential-item">
