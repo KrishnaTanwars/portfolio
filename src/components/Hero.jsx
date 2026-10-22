@@ -309,12 +309,12 @@ Date:   Software Engineering Sprint
                     {'        '}self.name = <span className="syntax-string">"{personalInfo.name}"</span>{'\n'}
                     {'        '}self.role = <span className="syntax-string">"Graduate Engineer Trainee"</span>{'\n'}
                     {'        '}self.company = <span className="syntax-string">"SMAAC Net Solutions"</span>{'\n'}
-                    {'        '}self.education = <span className="syntax-string">"B.Tech CSE (AI/ML) · GLA '27"</span>{'\n'}
-                    {'        '}self.languages = [<span className="syntax-string">"Python"</span>, <span className="syntax-string">"SQL"</span>, <span className="syntax-string">"Java"</span>]{'\n'}
+                    {'        '}self.location = <span className="syntax-string">"Gurgaon, Haryana"</span>{'\n'}
+                    {'        '}self.core_stack = [<span className="syntax-string">"Python"</span>, <span className="syntax-string">"SQL"</span>, <span className="syntax-string">"HTML5"</span>, <span className="syntax-string">"CSS3"</span>, <span className="syntax-string">"JavaScript"</span>]{'\n'}
                     {'        '}self.databases = [<span className="syntax-string">"MySQL"</span>, <span className="syntax-string">"PostgreSQL"</span>, <span className="syntax-string">"SQLite"</span>]{'\n'}
-                    {'        '}self.specialties = [<span className="syntax-string">"Backend"</span>, <span className="syntax-string">"RAG"</span>, <span className="syntax-string">"Power BI"</span>]{'\n\n'}
+                    {'        '}self.specialties = [<span className="syntax-string">"Enterprise ERP"</span>, <span className="syntax-string">"Backend APIs"</span>, <span className="syntax-string">"Power BI"</span>, <span className="syntax-string">"RAG"</span>]{'\n\n'}
                     {'    '}<span className="syntax-keyword">def</span> <span className="syntax-function">is_available_for_hire</span>(self):{'\n'}
-                    {'        '}<span className="syntax-keyword">return</span> <span className="syntax-bool">True</span>  <span className="syntax-comment"># Actively connecting</span>
+                    {'        '}<span className="syntax-keyword">return</span> <span className="syntax-bool">True</span>  <span className="syntax-comment"># Available for opportunities</span>
                   </code>
                 </pre>
               )}

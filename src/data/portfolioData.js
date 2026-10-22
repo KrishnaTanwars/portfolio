@@ -458,16 +458,16 @@ export const educationInfo = {
       year: "2023 – 2027"
     },
     {
-      degree: "Senior Secondary (Class 12th) – Computer Science",
-      institution: "Saraswati Vidhya Mandir / Board",
+      degree: "Class XII (Senior Secondary)",
+      institution: "CBSE Board",
       score: "Percentage: 93%",
-      year: "2021 – 2022"
+      year: "2022"
     },
     {
-      degree: "Secondary Education (Class 10th) – Science & Mathematics",
-      institution: "Saraswati Vidhya Mandir / Board",
+      degree: "Class X (Secondary)",
+      institution: "CBSE Board",
       score: "Percentage: 95%",
-      year: "2019 – 2020"
+      year: "2020"
     }
   ],
   focusAreas: [
