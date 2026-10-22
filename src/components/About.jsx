@@ -86,7 +86,7 @@ export default function About() {
                 <div className="about-profile-tags">
                   <span className="about-pill">📍 {personalInfo.location}</span>
                   <span className="about-pill">💼 SMAAC Net Solutions</span>
-                  <span className="about-pill">🎓 GLA University ('27 · 8.3 CGPA)</span>
+                  <span className="about-pill">🏆 HackerRank SQL Gold</span>
                 </div>
               </div>
             </div>
@@ -99,24 +99,24 @@ export default function About() {
 
             <div className="about-credentials-box card">
               <div className="credential-item">
-                <span className="cred-icon">🎓</span>
-                <div>
-                  <strong>B.Tech in Computer Science & Engineering (AI/ML)</strong>
-                  <p>GLA University, Mathura · CGPA: 8.3 / 10 · Expected Graduation: 2027</p>
-                </div>
-              </div>
-              <div className="credential-item">
                 <span className="cred-icon">💼</span>
                 <div>
-                  <strong>Graduate Engineer Trainee</strong>
-                  <p>SMAAC Net Solutions (Gurgaon, Haryana) · Software Development</p>
+                  <strong>Graduate Engineer Trainee (GET)</strong>
+                  <p>Smaac Net Solutions Pvt. Ltd. (Gurgaon, Haryana) · Software Development & Enterprise ERP</p>
                 </div>
               </div>
               <div className="credential-item">
-                <span className="cred-icon">📊</span>
+                <span className="cred-icon">🏆</span>
                 <div>
-                  <strong>Internship Experience</strong>
-                  <p>AtliQ Technologies (Data Analyst Intern) & SkillCred (AI & Analytics Intern)</p>
+                  <strong>1st Runner-Up — Analytics & Visualization Hackathon</strong>
+                  <p>Smart Agrofarm Analytics Solution · Department of CEA, GLA University</p>
+                </div>
+              </div>
+              <div className="credential-item">
+                <span className="cred-icon">🎓</span>
+                <div>
+                  <strong>B.Tech in Computer Science & Engineering</strong>
+                  <p>GLA University, Mathura · CGPA: 8.3 / 10</p>
                 </div>
               </div>
             </div>

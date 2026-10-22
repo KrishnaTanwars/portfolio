@@ -52,7 +52,7 @@ export default function Education() {
             </div>
           </div>
 
-          {/* Academic Track Record & Schooling */}
+          {/* Academic Track Record & Recognitions */}
           <div className="academic-highlight-card card">
             <div className="highlight-header">
               <div className="highlight-icon">
@@ -60,10 +60,24 @@ export default function Education() {
                   <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                 </svg>
               </div>
-              <h4 className="highlight-title">Academic Track Record</h4>
+              <h4 className="highlight-title">Key Recognitions & Academic Track</h4>
             </div>
 
             <div className="highlight-points">
+              <div className="highlight-item" style={{ borderBottom: '1px solid var(--border-subtle, rgba(255,255,255,0.06))', paddingBottom: '8px' }}>
+                <span className="highlight-dot">🏆</span>
+                <div>
+                  <strong>HackerRank SQL Gold Badge</strong>
+                  <p>Top-tier verification for advanced relational queries, window functions, and database problem solving.</p>
+                </div>
+              </div>
+              <div className="highlight-item" style={{ borderBottom: '1px solid var(--border-subtle, rgba(255,255,255,0.06))', paddingBottom: '8px' }}>
+                <span className="highlight-dot">🥈</span>
+                <div>
+                  <strong>1st Runner-Up — Data Analytics & Visualization Hackathon</strong>
+                  <p>Smart Agrofarm data-driven farm analytics solution · Department of CEA, GLA University</p>
+                </div>
+              </div>
               {educationInfo.academicDetails.map((item, idx) => (
                 <div key={idx} className="highlight-item">
                   <span className="highlight-dot">▹</span>

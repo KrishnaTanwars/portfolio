@@ -65,19 +65,19 @@ export default function ResumeModal({ isOpen, onClose }) {
                   <img src={personalInfo.photo || "/krishna.png"} alt={personalInfo.name} className="doc-avatar-img" />
                 </div>
                 <div className="doc-meta">
-                  <span className="doc-name">Krishna_Tanwar_Resume.pdf</span>
+                  <span className="doc-name">Krishna_Resume.pdf</span>
                   <span className="doc-format">Format: PDF · Verified ATS Standard · Comprehensive Format</span>
                 </div>
               </div>
 
               <p className="resume-state-text">
-                The compiled technical resume is ready for immediate download. It highlights software development at SMAAC Net Solutions in Gurgaon, internships at AtliQ Technologies & SkillCred, software and AI projects, and academic credentials at GLA University (CGPA: 8.3/10).
+                The compiled technical resume is ready for immediate download. It highlights software development and enterprise ERP solutions at SMAAC Net Solutions in Gurgaon, business intelligence at AtliQ Technologies, data analytics at SkillCred, core engineering projects, and credentials.
               </p>
 
               <div className="resume-action-buttons">
                 <a
                   href="./resume.pdf"
-                  download="Krishna_Tanwar_Resume.pdf"
+                  download="Krishna_Resume.pdf"
                   className="btn btn-primary btn-lg"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -107,7 +107,7 @@ export default function ResumeModal({ isOpen, onClose }) {
               <div className="summary-block">
                 <h4 className="summary-block-title">Core Candidate Overview</h4>
                 <p className="summary-text">
-                  Software Developer and Graduate Engineer Trainee with hands-on experience in software development using Python, SQL, HTML, CSS, and JavaScript. Experienced in building backend services, relational databases, data analytics with Power BI, and applied AI/ML systems.
+                  Software Developer and Graduate Engineer Trainee with hands-on experience in software development using Python, SQL, HTML, CSS, and JavaScript. Experienced in building backend services, enterprise ERP workflows, relational databases, data analytics with Power BI, and applied AI/ML systems.
                 </p>
               </div>
 
@@ -115,7 +115,7 @@ export default function ResumeModal({ isOpen, onClose }) {
                 <div className="summary-col">
                   <h5>Technical Skills</h5>
                   <ul className="summary-list">
-                    <li><strong>Languages:</strong> Python, SQL, JavaScript, HTML5, CSS3</li>
+                    <li><strong>Languages:</strong> Python, SQL (Gold Badge), JavaScript, HTML5, CSS3</li>
                     <li><strong>Backend & Web:</strong> Flask, REST APIs, React, JSON</li>
                     <li><strong>Databases:</strong> MySQL, PostgreSQL, SQLite</li>
                     <li><strong>Analytics & BI:</strong> Power BI, Microsoft Excel, DAX, Power Query</li>
@@ -124,13 +124,14 @@ export default function ResumeModal({ isOpen, onClose }) {
                 </div>
 
                 <div className="summary-col">
-                  <h5>Experience & Education</h5>
+                  <h5>Experience & Recognitions</h5>
                   <ul className="summary-list">
-                    <li><strong>SMAAC Net Solutions:</strong> Graduate Engineer Trainee (Gurgaon, Haryana)</li>
-                    <li><strong>AtliQ Technologies:</strong> Data Analyst Intern (2025–2026)</li>
-                    <li><strong>SkillCred:</strong> AI & Analytics Intern (2025)</li>
-                    <li><strong>GLA University:</strong> B.Tech CSE (AI & ML) '27 (CGPA 8.3/10)</li>
-                    <li><strong>Location:</strong> Gurgaon, Haryana (Hometown: Kosi Kalan)</li>
+                    <li><strong>SMAAC Net Solutions:</strong> Graduate Engineer Trainee (Gurgaon)</li>
+                    <li><strong>AtliQ Technologies:</strong> Data Analyst (Power BI & SQL)</li>
+                    <li><strong>SkillCred:</strong> Data Analyst (50K+ Records & Dashboards)</li>
+                    <li><strong>Recognitions:</strong> HackerRank SQL Gold · 1st Runner-Up Hackathon</li>
+                    <li><strong>GLA University:</strong> B.Tech in CSE (CGPA 8.3/10)</li>
+                    <li><strong>Location:</strong> Gurgaon, Haryana, India</li>
                     <li><strong>Phone:</strong> +91 6395005796</li>
                   </ul>
                 </div>
@@ -139,7 +140,7 @@ export default function ResumeModal({ isOpen, onClose }) {
               <div className="summary-footer-actions">
                 <a
                   href="./resume.pdf"
-                  download="Krishna_Tanwar_Resume.pdf"
+                  download="Krishna_Resume.pdf"
                   className="btn btn-primary btn-sm"
                 >
                   Download PDF Now

@@ -10,16 +10,16 @@ export default function ResumeSection() {
             <span className="section-tag">Curriculum Vitae</span>
             <h2 className="section-title">Resume & Qualifications</h2>
             <p className="section-subtitle">
-              Review my complete engineering credentials directly below, or download a local copy of my official resume.
+              Official software engineering and data analytics credentials, verified experience, and technical achievements.
             </p>
           </div>
 
           <div className="resume-download-btn-wrapper">
             <a
               href="./resume.pdf"
-              download="Krishna_Tanwar_Resume.pdf"
+              download="Krishna_Resume.pdf"
               className="btn btn-primary"
-              aria-label="Download Krishna Tanwar resume PDF"
+              aria-label="Download Krishna resume PDF"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -64,9 +64,9 @@ export default function ResumeSection() {
             </div>
           </header>
 
-          {/* Professional Profile */}
+          {/* Professional Summary */}
           <section className="resume-paper-section">
-            <h2 className="resume-paper-heading">Professional Profile</h2>
+            <h2 className="resume-paper-heading">Professional Summary</h2>
             <p className="resume-paper-summary-text">{personalInfo.shortBio}</p>
           </section>
 
@@ -107,7 +107,7 @@ export default function ResumeSection() {
                   </ul>
 
                   <div className="resume-paper-tech-tags">
-                    <span className="tech-tag-label">Tech:</span>
+                    <span className="tech-tag-label">Stack:</span>
                     {exp.technologies.map((t, tIdx) => (
                       <span key={tIdx} className="resume-tech-pill">{t}</span>
                     ))}
@@ -117,16 +117,16 @@ export default function ResumeSection() {
             </div>
           </section>
 
-          {/* Key Technical Projects */}
+          {/* Projects */}
           <section className="resume-paper-section">
-            <h2 className="resume-paper-heading">Key Technical Projects</h2>
+            <h2 className="resume-paper-heading">Projects</h2>
             <div className="resume-paper-items">
               {projects.map((proj) => (
                 <div key={proj.id} className="resume-paper-item">
                   <div className="resume-paper-item-header">
                     <div>
                       <strong className="resume-paper-item-role">{proj.title}</strong>
-                      <span className="resume-paper-item-company"> | {proj.technologies.slice(0, 5).join(', ')}</span>
+                      <span className="resume-paper-item-company"> | {proj.technologies.join(', ')}</span>
                     </div>
                     <a
                       href={proj.repoUrl}
@@ -138,13 +138,24 @@ export default function ResumeSection() {
                     </a>
                   </div>
 
-                  <p className="resume-paper-item-desc">{proj.description}</p>
-
                   <ul className="resume-paper-bullet-list">
                     {proj.highlights.map((h, hIdx) => (
                       <li key={hIdx}>{h}</li>
                     ))}
                   </ul>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Certifications */}
+          <section className="resume-paper-section">
+            <h2 className="resume-paper-heading">Certifications</h2>
+            <div className="resume-paper-cert-list">
+              {certifications.map((c, idx) => (
+                <div key={idx} className="resume-paper-cert-item">
+                  <span className="cert-bullet">●</span>
+                  <span className="cert-title"><strong>{c.title}</strong> — {c.issuer}</span>
                 </div>
               ))}
             </div>
@@ -166,20 +177,6 @@ export default function ResumeSection() {
                   <p className="resume-paper-sub-detail">
                     <strong className="text-accent">{edu.score}</strong>
                   </p>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Certifications */}
-          <section className="resume-paper-section resume-paper-cert-section">
-            <h2 className="resume-paper-heading">Verified Credentials & Certifications</h2>
-            <div className="resume-paper-cert-list">
-              {certifications.map((c, idx) => (
-                <div key={idx} className="resume-paper-cert-row">
-                  <span className="cert-row-badge">✓</span>
-                  <span className="cert-row-title"><strong>{c.title}</strong> — {c.issuer}</span>
-                  <span className="cert-row-period">({c.status})</span>
                 </div>
               ))}
             </div>

@@ -42,7 +42,8 @@ class SoftwareDeveloper:
       "databases": ["MySQL", "PostgreSQL", "SQLite"],
       "analytics_ai": ["Power BI", "Excel", "RAG", "OpenCV", "YOLOv3"]
     },
-    "academics": "GLA University (B.Tech '27 · CGPA 8.3/10)",
+    "academics": "GLA University, Mathura (B.Tech in CSE · CGPA 8.3/10)",
+    "achievements": ["HackerRank SQL Gold Badge", "1st Runner-Up Hackathon Winner"],
     "available_for_hire": true
   }
 }`;
@@ -50,12 +51,13 @@ class SoftwareDeveloper:
   const terminalOutputs = {
     info: `$ python -m krishna_tanwar --info
 ✓ Profile: Krishna Tanwar (Software Developer)
-✓ Current Location: Gurgaon, Haryana
+✓ Current Location: Gurgaon, Haryana, India
 ✓ Role: Graduate Engineer Trainee @ SMAAC Net Solutions
 ✓ Phone: +91 6395005796 | Email: kstanwar0000@gmail.com
 ✓ Core Focus: Software development using Python, SQL, HTML, CSS, JS
-✓ Education: GLA University, Mathura (B.Tech CSE AI/ML '27 · CGPA 8.3/10)
-✓ Status: Available for Software Engineering Roles`,
+✓ Recognition: HackerRank SQL Gold Badge | 1st Runner-Up Hackathon Winner
+✓ Education: GLA University, Mathura (B.Tech in CSE · CGPA 8.3/10)
+✓ Status: Available for Software Engineering Opportunities`,
     stack: `$ check-stack --full
 [Languages & Web] Python, SQL, JavaScript, HTML5, CSS3
 [Backend]         Flask, REST APIs, System Architecture

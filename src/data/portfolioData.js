@@ -1,44 +1,46 @@
 /**
  * Central Portfolio Data Source of Truth
  * 
- * Krishna Tanwar | Software Developer
+ * Krishna Tanwar | Software Developer & Data Engineer
+ * Graduate Engineer Trainee at SMAAC Net Solutions
  * Core Focus: Software development using Python, SQL, HTML, CSS, JavaScript
- * Current Location: Gurgaon, Haryana | Hometown: Kosi Kalan, Mathura, UP
+ * Location: Gurgaon, Haryana, India | Hometown: Mathura, Uttar Pradesh, India
  */
 
 export const personalInfo = {
   name: "Krishna Tanwar",
-  headline: "Software Developer | Python · SQL · JavaScript · HTML/CSS · AI/ML",
+  headline: "Software Developer | Graduate Engineer Trainee at SMAAC Net Solutions | Python · SQL · HTML & CSS",
   avatar: "/krishna.png",
   photo: "/krishna.png",
-  location: "Gurgaon, Haryana",
-  currentLocation: "Gurgaon, Haryana",
-  hometown: "Kosi Kalan, Mathura, Uttar Pradesh",
+  location: "Gurgaon, Haryana, India",
+  currentLocation: "Gurgaon, Haryana, India",
+  hometown: "Mathura, Uttar Pradesh, India",
   phone: "+91 6395005796",
   email: "kstanwar0000@gmail.com",
   github: "https://github.com/KrishnaTanwars",
-  linkedin: "https://linkedin.com/in/krishnatanwars",
+  linkedin: "https://www.linkedin.com/in/krishnatanwars",
   currentRole: "Graduate Engineer Trainee at SMAAC Net Solutions",
-  statusBadge: "Available for Software Engineering Roles",
+  statusBadge: "Industry Professional · Software Development",
   shortBio:
-    "Software Developer and Graduate Engineer Trainee with hands-on experience in backend engineering, relational databases, web development, and applied AI systems. Focused on software development using Python, SQL, HTML, CSS, and JavaScript with practical expertise in data modeling, business intelligence, and AI-powered solutions.",
+    "Software Developer and Graduate Engineer Trainee at SMAAC Net Solutions with hands-on experience in software engineering, backend architectures, relational databases, enterprise ERP solutions, and data analytics. Skilled in software development using Python, SQL, HTML, CSS, and Flask, with applied capabilities in Power BI business intelligence and AI/ML systems.",
   aboutParagraphs: [
-    "I am a Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning at GLA University (expected graduation in 2027 · CGPA: 8.3 / 10). My core focus is software development using Python, SQL, HTML, CSS, and JavaScript.",
-    "Currently, I work as a Graduate Engineer Trainee at SMAAC Net Solutions in Gurgaon, Haryana, where I apply software engineering standards, build backend logic, and work on database-driven enterprise applications.",
-    "Previously, as a Data Analyst Intern at AtliQ Technologies and an AI & Analytics Intern at SkillCred, I developed interactive Power BI dashboards, automated reporting workflows with SQL and Excel, built RAG pipelines with Whisper and Ollama, and implemented computer vision models with OpenCV and YOLOv3.",
-    "I am passionate about building clean backend architectures, normalized relational database schemas, responsive web interfaces, and applied AI tools. I am actively seeking software developer, backend engineer, and Python developer opportunities in Gurgaon, Haryana (as well as remote and hybrid roles)."
+    "I am a Software Developer and Graduate Engineer Trainee at SMAAC Net Solutions in Gurgaon, Haryana. My core technical foundation is centered on software development using Python, SQL, MySQL, HTML, CSS, and Flask, delivering scalable backend logic, database architectures, and business applications.",
+    "At SMAAC Net Solutions, I work on software development and enterprise ERP solutions supporting business workflows in the Pre-Engineered Building (PEB) industry, collaborating on database design, business logic implementation, and system performance.",
+    "Previously, as a Data Analyst at AtliQ Technologies and SkillCred, I built production-grade Power BI dashboards, engineered 20+ dynamic DAX measures, performed ETL across multi-table fact/dimension schemas, and analyzed 100K+ transactional records with advanced SQL queries.",
+    "I have also led cross-functional engineering and analytics teams, serving as Project Manager & Team Lead for Smart India Hackathon and Data Analytics Team Lead at Innovative Bharat. Additionally, our Smart Agrofarm project was awarded 1st Runner-Up in the Data Analytics & Visualization Hackathon.",
+    "I focus on writing clean, maintainable code, structuring normalized database models, and building efficient business systems. I am open to software development, backend engineering, and Python developer roles."
   ],
   stats: [
-    { label: "Core Focus", value: "Python, SQL, HTML/CSS/JS" },
     { label: "Current Role", value: "Graduate Engineer Trainee" },
-    { label: "Current Location", value: "Gurgaon, Haryana" },
-    { label: "Education", value: "B.Tech CSE (AI/ML) '27 · 8.3 CGPA" }
+    { label: "Company", value: "SMAAC Net Solutions" },
+    { label: "Core Stack", value: "Python, SQL, HTML, CSS, JS" },
+    { label: "Location", value: "Gurgaon, Haryana" }
   ],
   quickMetrics: [
-    { number: "9+", label: "Engineering Projects" },
-    { number: "100K+", label: "Data Records Modeled" },
-    { number: "8.3", label: "CGPA at GLA University" },
-    { number: "100%", label: "Clean Code & Delivery" }
+    { number: "10+", label: "Verified Repositories" },
+    { number: "100K+", label: "Records Modeled & Queried" },
+    { number: "Gold", label: "HackerRank SQL Badge" },
+    { number: "1st", label: "Runner-Up Hackathon Winner" }
   ]
 };
 
@@ -56,50 +58,81 @@ export const navigationLinks = [
 export const experiences = [
   {
     id: "smaac",
-    role: "Graduate Engineer Trainee",
-    company: "SMAAC Net Solutions",
-    period: "Nov 2024 – Present",
+    role: "Graduate Engineer Trainee (GET)",
+    company: "Smaac Net Solutions Pvt. Ltd.",
+    period: "September 2026 – Present",
     badge: "Current Role",
-    type: "Full-Time",
-    location: "Gurgaon, Haryana",
+    type: "Full-Time Industry Role",
+    location: "Gurgaon, Haryana, India",
     description: [
-      "Contributing as an early-career software engineer focusing on software development using Python, SQL, HTML, CSS, and JavaScript.",
-      "Developing backend logic, database schemas, and data pipelines for enterprise-grade applications.",
-      "Collaborating on engineering workflows, applying clean code standards, and conducting peer code reviews."
+      "Gaining hands-on professional software development experience in building enterprise ERP solutions and business applications.",
+      "Learning and engineering how enterprise software architectures support business workflows in the PEB (Pre-Engineered Building) industry.",
+      "Developing backend logic, normalized database schemas, and structured data pipelines using Python, SQL, and MySQL.",
+      "Strengthening enterprise software best practices, database integrity, and production business requirements."
     ],
-    technologies: ["Python", "SQL", "JavaScript", "HTML5", "CSS3", "Database Systems", "Software Engineering"]
+    technologies: ["Python", "SQL", "MySQL", "HTML5", "CSS3", "Flask", "Git", "Enterprise ERP"]
   },
   {
     id: "atliq",
-    role: "Data Analyst Intern",
+    role: "Data Analyst",
     company: "AtliQ Technologies",
-    period: "Nov 2025 – Feb 2026",
-    badge: "Internship",
-    type: "Internship",
-    location: "India",
+    period: "November 2025 – December 2025",
+    badge: "Virtual Internship",
+    type: "Industry Internship (Remote)",
+    location: "Bengaluru, Karnataka, India",
     description: [
-      "Performed data validation, cleansing, and normalization to maintain reporting accuracy across business lines.",
-      "Developed interactive Power BI dashboards and analytical reports for business decision-making using DAX and SQL.",
-      "Worked with SQL and Excel to support reporting and data analysis workflows.",
-      "Automated repetitive data preparation steps and reporting workflows using reusable dashboards."
+      "Delivered end-to-end Power BI and SQL solutions aligned with real-world business requirements in insurance and enterprise domains.",
+      "Built 3+ interactive Power BI dashboards covering revenue, customer growth, sales modes, and age-group segmentation for faster trend comparison.",
+      "Designed and validated 20+ DAX measures (MoM growth, revenue KPIs, customer metrics), ensuring 100% KPI alignment with business logic.",
+      "Cleaned, transformed, and modeled datasets across multiple fact & dimension tables, reducing reporting errors and improving reporting efficiency by 25%."
     ],
-    technologies: ["Power BI", "SQL", "DAX", "Power Query", "Excel", "Data Modeling"]
+    technologies: ["Power BI", "SQL", "DAX", "Power Query", "Excel", "Data Modeling", "Business Intelligence"]
   },
   {
     id: "skillcred",
-    role: "AI & Analytics Intern",
+    role: "Data Analyst Intern",
     company: "SkillCred",
-    period: "May 2025 – Jul 2025",
-    badge: "Internship",
-    type: "Internship (Remote)",
-    location: "Remote",
+    period: "June 2024 – July 2024",
+    badge: "Industry Internship",
+    type: "Industry Internship (Remote)",
+    location: "Pune, Maharashtra, India",
     description: [
-      "Built an AI-powered meeting transcription and summarization tool using Whisper and Ollama.",
-      "Developed computer vision pipelines using OpenCV and YOLOv3 for object detection tasks.",
-      "Designed RAG workflows for document-based question-answering with LLMs.",
-      "Preprocessed text, audio, and visual data for model training and evaluation."
+      "Analyzed large business datasets (50K+ records) using Advanced Excel, Pivot Tables, and data visualization.",
+      "Built 3 interactive Excel dashboards for customer and performance analysis, reducing analysis time by ~25%.",
+      "Applied VLOOKUP, data cleaning, and data transformation techniques to prepare analysis-ready datasets.",
+      "Conducted customer segmentation analysis and generated actionable insights through structured reporting."
     ],
-    technologies: ["Python", "Whisper", "Ollama", "OpenCV", "YOLOv3", "RAG", "LLMs"]
+    technologies: ["Advanced Excel", "Pivot Tables", "VLOOKUP", "Data Validation", "Customer Segmentation", "Dashboards"]
+  },
+  {
+    id: "innovative-bharat",
+    role: "Data Analytics Team Lead",
+    company: "Innovative Bharat",
+    period: "October 2024 – November 2024",
+    badge: "Team Lead",
+    type: "Leadership Role",
+    location: "Mathura, Uttar Pradesh, India",
+    description: [
+      "Led a 5-member team to analyze and monitor industrial sensor data for system performance tracking.",
+      "Designed structured data pipelines and conducted exploratory data analysis to identify patterns and anomalies.",
+      "Built interactive dashboards and reports to communicate operational performance metrics to stakeholders."
+    ],
+    technologies: ["Python", "Data Pipelines", "Sensor Analytics", "Team Leadership", "Data Visualization"]
+  },
+  {
+    id: "smart-india-hackathon",
+    role: "Project Manager & Team Lead",
+    company: "Smart India Hackathon",
+    period: "August 2023 – August 2024",
+    badge: "Project Lead",
+    type: "Competitive Leadership",
+    location: "Mathura, Uttar Pradesh, India",
+    description: [
+      "Led cross-functional teams (6 members) across multiple Smart India Hackathon editions to deliver data-driven solutions for real-world government problem statements.",
+      "Managed requirement analysis, task planning, data analysis support, and dashboard presentations under strict timelines.",
+      "Presented technical findings and solution impact to national evaluation panels."
+    ],
+    technologies: ["Project Management", "Python", "Requirement Analysis", "Dashboard Presentation", "Team Leadership"]
   }
 ];
 
@@ -118,13 +151,13 @@ export const projects = [
     metricBadge: "RAG + Local LLM",
     description:
       "A Retrieval-Augmented Generation (RAG) based AI teaching assistant that transcribes video lectures with Whisper into searchable knowledge, generates vector embeddings with Ollama, and retrieves timestamped answers via a local LLM.",
-    technologies: ["Python", "RAG", "Whisper", "Ollama", "LLMs", "Vector Embeddings"],
+    technologies: ["Python", "RAG", "Whisper", "Ollama", "Vector Embeddings", "LLMs"],
     repoUrl: "https://github.com/KrishnaTanwars/rag-ai-teaching-assistant",
     verified: true,
     highlights: [
       "Automated audio extraction and Whisper speech-to-text pipeline for lecture videos",
-      "Semantic passage chunking and local vector embedding indexing",
-      "Context-aware query retrieval returning answers with exact video timestamps"
+      "Semantic passage chunking and local vector embedding indexing with Ollama",
+      "Context-aware query retrieval returning answers with exact video timestamps for instant explanation lookup"
     ],
     architecture: "Video Input ➔ Whisper STT ➔ JSON Chunking ➔ Ollama Embeddings ➔ Vector DB ➔ Semantic Query Retrieval & Timestamp Link"
   },
@@ -141,7 +174,7 @@ export const projects = [
     verified: true,
     highlights: [
       "Real-time video frame inference with OpenCV, YOLOv3, and TensorFlow deep learning models",
-      "Supports multiple computer vision tasks concurrently from a single unified application",
+      "Designed the system to support multiple computer vision tasks concurrently from a single unified application",
       "Interactive Flask web dashboard displaying live bounding boxes and detection results"
     ],
     architecture: "Live RTSP / Video Feed ➔ OpenCV Processing ➔ YOLOv3 & TensorFlow Inference ➔ Flask Web Interface"
@@ -165,76 +198,22 @@ export const projects = [
     architecture: "Camera Stream ➔ YOLO Vehicle Bounding ➔ EasyOCR Plate Read ➔ Traffic Rule Engine ➔ SQLite Audit DB ➔ React Client"
   },
   {
-    id: "ai-travel-expense-analyzer",
-    title: "AI Travel & Expense Analyzer",
-    category: "software-ai",
-    categoryLabel: "Software Dev & AI/ML",
-    metricBadge: "OpenAI & Streamlit",
-    description:
-      "An intelligent expense tracking and financial analysis application that ingests CSV records, classifies expenditures, and generates natural-language spending summaries, budget insights, and cost anomaly alerts using an integrated LLM.",
-    technologies: ["Python", "Streamlit", "Pandas", "Matplotlib", "OpenAI API", "Data Analytics"],
-    repoUrl: "https://github.com/KrishnaTanwars",
-    verified: true,
-    highlights: [
-      "Categorizes, tracks, and analyzes granular travel and operational expenses from CSV files",
-      "Integrated OpenAI LLM to generate automated spending insights, budget summaries, and cost anomalies",
-      "Visualized expenditure breakdown with interactive Matplotlib charts inside a Streamlit web app"
-    ],
-    architecture: "CSV Upload ➔ Pandas ETL & Classification ➔ OpenAI Prompt Pipeline ➔ Matplotlib Visuals ➔ Streamlit Web UI"
-  },
-  {
-    id: "stock-performance-tracker",
-    title: "Stock Performance Tracker",
-    category: "software-ai",
-    categoryLabel: "Software Dev & AI/ML",
-    metricBadge: "Quant & Time-Series",
-    description:
-      "A quantitative market analytics application extracting historical stock data via yfinance, computing volatility and returns, executing moving average crossover strategies, and calculating key financial risk metrics.",
-    technologies: ["Python", "yfinance", "Pandas", "Matplotlib", "NumPy", "Time-Series"],
-    repoUrl: "https://github.com/KrishnaTanwars",
-    verified: true,
-    highlights: [
-      "Extracted historical equities data using yfinance to analyze cumulative returns and trends",
-      "Implemented moving average crossovers and calculated risk metrics including Sharpe ratio and maximum drawdown",
-      "Generated automated reports and comparative visual plots benchmarking multi-stock performance"
-    ],
-    architecture: "yfinance API ➔ Pandas Time-Series Cleaning ➔ Moving Average & Sharpe Calculation ➔ Matplotlib Charting"
-  },
-  {
-    id: "automated-billing-invoicing",
-    title: "Automated Billing & Invoicing System",
-    category: "software-ai",
-    categoryLabel: "Software Dev & AI/ML",
-    metricBadge: "Desktop App & SQLite",
-    description:
-      "A desktop software application engineered to generate, store, and manage customer invoices with automated PDF rendering, dynamic tax and discount calculations, and persistent SQLite database transaction logging.",
-    technologies: ["Python", "Tkinter", "SQLite", "ReportLab", "PDF Generation", "Database Design"],
-    repoUrl: "https://github.com/KrishnaTanwars",
-    verified: true,
-    highlights: [
-      "Developed a clean desktop GUI application using Tkinter to manage inventory, customers, and invoices",
-      "Automated dynamic PDF invoice generation with automated tax, subtotal, and discount calculations via ReportLab",
-      "Designed a normalized SQLite database for inventory tracking, customer records, and transaction logs"
-    ],
-    architecture: "Tkinter GUI ➔ Validation Logic ➔ SQLite Persistent DB ➔ ReportLab PDF Engine ➔ Invoice Dispatch"
-  },
-  {
     id: "sales-customer-analytics",
     title: "Sales & Customer Performance Analytics",
     category: "data-bi",
     categoryLabel: "Data Analytics & BI",
-    metricBadge: "Cohort & SQL Analytics",
+    metricBadge: "100K+ Transactions · SQL",
     description:
-      "A comprehensive relational database analytics project evaluating customer transaction histories, sales performance indicators, revenue retention patterns, and product metrics to drive data-informed business strategies.",
-    technologies: ["SQL", "MySQL", "PostgreSQL", "Excel", "Data Analytics", "Performance Metrics"],
-    repoUrl: "https://github.com/KrishnaTanwars/Sales-Customer-Performance-Analytics",
+      "A comprehensive relational database analytics project evaluating 100K+ sales transactions. Developed 20+ SQL business queries using CTEs, Window Functions, Joins, Subqueries, and CASE statements to analyze sales, customers, products, and markets.",
+    technologies: ["SQL", "MySQL", "CTEs", "Window Functions", "Subqueries", "Data Analytics"],
+    repoUrl: "https://github.com/KrishnaTanwars/Sales-Customer-Performance-Analytics-",
     verified: true,
     highlights: [
-      "Complex SQL querying for cohort and customer segment analysis",
-      "Sales performance tracking across regions and product lines",
-      "Structured data transformations for executive reporting"
+      "Analyzed 100K+ sales transactions across customers, products, and markets using MySQL",
+      "Authored 20+ complex business queries utilizing CTEs, Window Functions, Joins, and aggregations",
+      "Conducted customer ranking, market-level achievement %, and variance analysis to drive business decisions"
     ],
-    architecture: "Transactional DB ➔ SQL Query Views & Joins ➔ Customer Segmentation ➔ KPI Aggregation ➔ Visual Reports"
+    architecture: "100K+ Transactional DB ➔ Advanced SQL (CTEs, Windowing) ➔ Customer & Market Segmentation ➔ KPI Aggregation"
   },
   {
     id: "business-insights-360",
@@ -248,11 +227,47 @@ export const projects = [
     repoUrl: "https://github.com/KrishnaTanwars/Business-Insights-360-PowerBI-Dashboard",
     verified: true,
     highlights: [
-      "Cross-functional metrics covering Gross Margin, Net Sales & Forecast Accuracy",
-      "Advanced DAX measures for dynamic time-intelligence calculations",
-      "Optimized star-schema data model handling multi-table business records"
+      "Designed a Star Schema data model across 4 core business functions: Finance, Sales, Marketing, Supply Chain",
+      "Engineered advanced DAX measures for dynamic time-intelligence and net profit / gross margin calculations",
+      "Delivered consolidated executive reports tracking key performance metrics for data-driven decisions"
     ],
-    architecture: "Raw CSV / SQL Records ➔ Power Query ETL ➔ Star-Schema Data Model ➔ DAX KPI Formulas ➔ Interactive Power BI Suite"
+    architecture: "Raw Records ➔ Power Query ETL ➔ Star-Schema Data Model ➔ DAX KPI Formulas ➔ Interactive Power BI Suite"
+  },
+  {
+    id: "shield-insurance-bi",
+    title: "Shield Insurance BI Analytics Dashboard",
+    category: "data-bi",
+    categoryLabel: "Data Analytics & BI",
+    metricBadge: "Insurance Domain BI",
+    description:
+      "An end-to-end Power BI dashboard analyzing insurance customer and revenue trends across sales modes, customer age groups, and policies to support growth strategy and operational efficiency.",
+    technologies: ["Power BI", "DAX", "Power Query", "Insurance Analytics", "Data Modeling"],
+    repoUrl: "https://github.com/KrishnaTanwars/Shield-Insurance-BI-Dashboard-PowerBI",
+    verified: true,
+    highlights: [
+      "Analyzed customer growth, revenue trends, and sales modes across multiple insurance policies",
+      "Built dynamic DAX measures for month-over-month growth and customer retention metrics",
+      "Designed interactive visual drill-downs for executive decision support"
+    ],
+    architecture: "Insurance Transaction Data ➔ Power Query Transformation ➔ Star Schema Modeling ➔ DAX Measures ➔ BI Dashboard"
+  },
+  {
+    id: "smart-agrofarm",
+    title: "Smart Agrofarm Analytics (Hackathon Winner)",
+    category: "software-ai",
+    categoryLabel: "Software Dev & AI/ML",
+    metricBadge: "1st Runner-Up Hackathon",
+    description:
+      "A data-driven farm monitoring analytics platform that analyzes soil moisture, weather trends, and crop health metrics to present actionable KPIs supporting irrigation and yield optimization. Awarded 1st Runner-Up in the Data Analytics Hackathon.",
+    technologies: ["Python", "Pandas", "Plotly", "Data Visualization", "IoT Analytics"],
+    repoUrl: "https://github.com/KrishnaTanwars",
+    verified: true,
+    highlights: [
+      "Awarded 1st Runner-Up in the Data Analytics & Visualization Hackathon by Department of CEA, GLA University",
+      "Engineered data pipelines analyzing real-time sensor and environmental telemetry with Python & Pandas",
+      "Built interactive Plotly dashboards presenting actionable crop and irrigation KPIs under tight timelines"
+    ],
+    architecture: "Sensor Telemetry ➔ Python / Pandas Processing ➔ KPI Optimization Algorithms ➔ Plotly Interactive Visuals"
   },
   {
     id: "credit-card-financial-insights",
@@ -266,11 +281,29 @@ export const projects = [
     repoUrl: "https://github.com/KrishnaTanwars/Credit-Card-Spend-and-Financial-Insights-PowerBI",
     verified: true,
     highlights: [
-      "Customer spending segmentation by age, income, and card type",
-      "Transaction trend analysis and delinquency/revenue KPI tracking",
+      "Customer spending segmentation by age, income, and card type across geographical markets",
+      "Transaction trend analysis, delinquency rate monitoring, and revenue KPI tracking",
       "Interactive multi-page report with drill-through exploration"
     ],
     architecture: "Card Transactional Data ➔ Data Cleaning in Power Query ➔ Metric Engineering ➔ Demographic Segmentation ➔ Drill-Through Dashboard"
+  },
+  {
+    id: "hospitality-data-analysis",
+    title: "Hospitality Business Data Analysis",
+    category: "data-bi",
+    categoryLabel: "Data Analytics & BI",
+    metricBadge: "Python & Pandas",
+    description:
+      "Data analysis project evaluating operational revenue, occupancy rates, booking channels, and customer ratings for a luxury hotel chain to identify revenue leakage and optimize pricing strategies.",
+    technologies: ["Python", "Pandas", "Matplotlib", "Data Cleaning", "Business Analytics"],
+    repoUrl: "https://github.com/KrishnaTanwars/Hospitality-Data-Analysis-Python",
+    verified: true,
+    highlights: [
+      "Cleaned and merged multi-source hotel booking and transactional datasets using Pandas",
+      "Calculated key hospitality metrics: RevPAR, ADR, Occupancy %, and Realization %",
+      "Identified critical booking channel discrepancies to improve overall realization rate"
+    ],
+    architecture: "Raw Hotel Records ➔ Pandas Data Cleansing ➔ Metric Formulation (RevPAR, ADR) ➔ Visual Insights"
   }
 ];
 
@@ -280,9 +313,10 @@ export const skillCategories = [
     icon: "code",
     skills: [
       { name: "Python", level: "Primary", tag: "Backend & Systems" },
-      { name: "SQL", level: "Primary", tag: "Relational Queries" },
-      { name: "JavaScript", level: "Core", tag: "Web Interactivity" },
-      { name: "HTML5 & CSS3", level: "Core", tag: "Responsive UI" }
+      { name: "SQL", level: "Primary", tag: "Relational Queries (Gold Badge)" },
+      { name: "HTML5", level: "Core", tag: "Semantic Markup" },
+      { name: "CSS3", level: "Core", tag: "Responsive UI & Flex/Grid" },
+      { name: "JavaScript", level: "Core", tag: "Web Interactivity" }
     ]
   },
   {
@@ -291,7 +325,7 @@ export const skillCategories = [
     skills: [
       { name: "Flask", level: "Core", tag: "Microservices & APIs" },
       { name: "REST APIs", level: "Core", tag: "Endpoint Design" },
-      { name: "React", level: "Working", tag: "Frontend Interfaces" },
+      { name: "Enterprise ERP", level: "Applied", tag: "PEB Systems" },
       { name: "JSON & HTTP", level: "Core", tag: "Data Exchange" }
     ]
   },
@@ -299,8 +333,8 @@ export const skillCategories = [
     category: "Databases & Storage",
     icon: "database",
     skills: [
-      { name: "MySQL", level: "Core", tag: "Relational Design" },
-      { name: "PostgreSQL", level: "Working", tag: "Advanced RDBMS" },
+      { name: "MySQL", level: "Core", tag: "Relational Design & Indexing" },
+      { name: "PostgreSQL", level: "Working", tag: "RDBMS Architectures" },
       { name: "SQLite", level: "Core", tag: "Embedded Datastores" },
       { name: "Git & GitHub", level: "Core", tag: "Version Control" },
       { name: "VS Code", level: "Core", tag: "Development Environment" }
@@ -311,9 +345,9 @@ export const skillCategories = [
     icon: "bar-chart",
     skills: [
       { name: "Power BI", level: "Advanced", tag: "Enterprise Dashboards" },
-      { name: "Microsoft Excel", level: "Advanced", tag: "Data Validation & Modeling" },
-      { name: "DAX", level: "Proficient", tag: "Time-Intelligence Measures" },
+      { name: "DAX", level: "Proficient", tag: "Time-Intelligence & Measures" },
       { name: "Power Query", level: "Advanced", tag: "ETL & Transformation" },
+      { name: "Microsoft Excel", level: "Advanced", tag: "Pivot Tables, VLOOKUP & Modeling" },
       { name: "Pandas & NumPy", level: "Proficient", tag: "Python Data Stack" }
     ]
   },
@@ -331,107 +365,117 @@ export const skillCategories = [
   }
 ];
 
+export const achievements = [
+  {
+    title: "HackerRank SQL Gold Badge",
+    issuer: "HackerRank",
+    description: "Awarded top-tier Gold Badge for advanced problem solving in SQL queries, joins, aggregations, and subqueries."
+  },
+  {
+    title: "1st Runner-Up — Data Analytics & Visualization Hackathon",
+    issuer: "Department of CEA, GLA University",
+    description: "Built Smart Agrofarm data-driven farm analytics solution in a 3-member team, winning 1st Runner-Up."
+  },
+  {
+    title: "Smart India Hackathon Team Lead",
+    issuer: "Government of India / SIH",
+    description: "Led a 6-member team delivering data-driven solutions for real-world government problem statements."
+  }
+];
+
 export const certifications = [
-  {
-    title: "Applied Machine Learning in Python",
-    issuer: "Coursera",
-    period: "Verified",
-    status: "Verified",
-    description: "Applied machine learning algorithms, model evaluation, scikit-learn pipelines, and predictive modeling in Python.",
-    skills: ["Machine Learning", "Python", "Scikit-Learn", "Model Evaluation"]
-  },
-  {
-    title: "Data Analytics with Python",
-    issuer: "NPTEL",
-    period: "Verified",
-    status: "Verified",
-    description: "Statistical data analysis, exploratory data analysis, hypothesis testing, and analytical computation using Python.",
-    skills: ["Data Analytics", "Python", "Pandas", "Statistical Modeling"]
-  },
-  {
-    title: "Python for Data Science",
-    issuer: "Cognitive Class",
-    period: "Verified",
-    status: "Verified",
-    description: "Data analysis methodologies, data manipulation, NumPy arrays, Pandas dataframes, and data science workflows.",
-    skills: ["Python", "Pandas", "NumPy", "Data Science"]
-  },
-  {
-    title: "Power BI Data Analytics 3.0",
-    issuer: "Codebasics",
-    period: "Verified",
-    status: "Verified",
-    description: "Hands-on enterprise data analytics, business intelligence dashboards, star schema modeling, and DAX calculations.",
-    skills: ["Power BI", "DAX", "Power Query", "Data Analytics"]
-  },
   {
     title: "SQL (Intermediate)",
     issuer: "HackerRank",
-    period: "Verified",
     status: "Verified",
-    description: "Relational querying, complex joins, aggregations, subqueries, and database problem solving.",
+    description: "Complex relational queries, multi-table joins, subqueries, aggregations, and database problem solving.",
     skills: ["SQL", "MySQL", "Database Queries"]
+  },
+  {
+    title: "Problem Solving (Intermediate)",
+    issuer: "HackerRank",
+    status: "Verified",
+    description: "Algorithmic thinking, data structures, edge-case optimization, and computational problem solving.",
+    skills: ["Algorithms", "Problem Solving", "Logic"]
+  },
+  {
+    title: "Problem Solving (Basic)",
+    issuer: "HackerRank",
+    status: "Verified",
+    description: "Foundational data structures, array manipulation, and algorithmic reasoning.",
+    skills: ["Data Structures", "Algorithms"]
   },
   {
     title: "Python (Basic)",
     issuer: "HackerRank",
-    period: "Verified",
     status: "Verified",
-    description: "Core Python programming, data structures, algorithmic logic, and functions.",
-    skills: ["Python", "Algorithms", "Backend Logic"]
+    description: "Core Python programming, control flow, functions, and object-oriented concepts.",
+    skills: ["Python", "Backend Logic"]
   },
   {
-    title: "Python Programming & Data Structures Specialization",
-    issuer: "GLA University & Academic Coursework",
-    period: "Specialization Track",
+    title: "Power BI Data Analytics 3.0",
+    issuer: "Codebasics",
     status: "Verified",
-    description: "Modular software design, algorithms, computational data structures, and backend logic in Python.",
-    skills: ["Python", "Data Structures", "Algorithms"]
+    description: "Comprehensive enterprise business intelligence, Star Schema data modeling, and DAX calculations.",
+    skills: ["Power BI", "DAX", "Power Query", "Data Modeling"]
   },
   {
-    title: "Relational Database Management Systems & SQL",
-    issuer: "GLA University & DBMS Curriculum",
-    period: "Curriculum Track",
+    title: "Data Science & Analytics",
+    issuer: "Cognitive Class",
     status: "Verified",
-    description: "Comprehensive database design, 3NF schema normalization, relational joins, indexing, and transactional ACID properties.",
-    skills: ["SQL", "MySQL", "Database Schema Design"]
+    description: "Data manipulation with Pandas and NumPy, exploratory data analysis, and predictive workflows.",
+    skills: ["Python", "Pandas", "NumPy", "Data Science"]
+  },
+  {
+    title: "Applied Machine Learning in Python",
+    issuer: "Coursera",
+    status: "Verified",
+    description: "Applied machine learning algorithms, model evaluation, scikit-learn pipelines, and predictive modeling.",
+    skills: ["Machine Learning", "Python", "Scikit-Learn"]
+  },
+  {
+    title: "Data Analytics with Python",
+    issuer: "NPTEL",
+    status: "Verified",
+    description: "Statistical data analysis, hypothesis testing, and quantitative computation with Python.",
+    skills: ["Data Analytics", "Python", "Statistical Modeling"]
   }
 ];
 
 export const educationInfo = {
   institution: "GLA University, Mathura",
-  location: "Mathura, Uttar Pradesh",
+  location: "Mathura, Uttar Pradesh, India",
   degree: "Bachelor of Technology (B.Tech)",
   major: "Computer Science & Engineering",
   specialization: "Artificial Intelligence and Machine Learning (AI/ML)",
   cgpa: "8.3 / 10",
-  period: "Expected Graduation: 2027",
+  period: "August 2023 – August 2027",
   academicDetails: [
     {
-      degree: "B.Tech – Computer Science & Engineering (AI & ML)",
+      degree: "B.Tech in Computer Science & Engineering (AI & ML)",
       institution: "GLA University, Mathura",
       score: "CGPA: 8.3 / 10",
-      year: "Sep 2023 – Present (Exp. 2027)"
+      year: "2023 – 2027"
     },
     {
-      degree: "Higher Secondary (Class XII, TSBIE)",
-      institution: "Sri Chaitanya Junior College, Hyderabad",
+      degree: "Senior Secondary (Class 12th) – Computer Science",
+      institution: "Saraswati Vidhya Mandir / Board",
       score: "Percentage: 93%",
-      year: "2021 – 2023"
+      year: "2021 – 2022"
     },
     {
-      degree: "High School (Class X, CBSE)",
-      institution: "A.K. Public School, Mathura",
+      degree: "Secondary Education (Class 10th) – Science & Mathematics",
+      institution: "Saraswati Vidhya Mandir / Board",
       score: "Percentage: 95%",
-      year: "2020 – 2021"
+      year: "2019 – 2020"
     }
   ],
   focusAreas: [
-    "Data Structures & Algorithms",
+    "Software Engineering & Architecture",
     "Database Management Systems (DBMS) & SQL",
-    "Software Development (Python, SQL, HTML, CSS, JS)",
+    "Enterprise Systems & Backend Development",
     "Applied Machine Learning & Neural Networks",
-    "Data Analytics, ETL & Power BI Dashboarding"
+    "Data Analytics & Business Intelligence"
   ]
 };
 
@@ -439,19 +483,19 @@ export const contactInfo = {
   name: "Krishna Tanwar",
   phone: "+91 6395005796",
   email: "kstanwar0000@gmail.com",
-  linkedin: "https://linkedin.com/in/krishnatanwars",
+  linkedin: "https://www.linkedin.com/in/krishnatanwars",
   github: "https://github.com/KrishnaTanwars",
-  location: "Gurgaon, Haryana (Open to Remote / On-Site)",
-  currentLocation: "Gurgaon, Haryana",
-  hometown: "Kosi Kalan, Mathura, Uttar Pradesh",
+  location: "Gurgaon, Haryana, India (Open to Remote / On-Site)",
+  currentLocation: "Gurgaon, Haryana, India",
+  hometown: "Mathura, Uttar Pradesh, India",
   headline: "Let's build scalable software and data systems together",
   subtext:
-    "I'm open to Software Developer, Python Developer, and Backend Engineering opportunities in Gurgaon, Haryana and remote. Let's discuss technology and build something impactful.",
+    "I am open to Software Developer, Backend Engineer, and Python Developer roles in Gurgaon, Haryana, and remote. Let's connect to discuss engineering opportunities.",
   templates: [
     {
       title: "🚀 Software Engineer Opportunity",
       subject: "Software Developer Opportunity for Krishna Tanwar",
-      body: "Hi Krishna,\n\nI reviewed your portfolio and was impressed by your software development background in Python, SQL, HTML/CSS, and JavaScript. We have an engineering opportunity that matches your skills.\n\nLet's connect soon!\n"
+      body: "Hi Krishna,\n\nI reviewed your portfolio and was impressed by your software development background in Python, SQL, HTML/CSS, and enterprise applications. We have an engineering opportunity that matches your skills.\n\nLet's connect soon!\n"
     },
     {
       title: "🤖 AI & Machine Learning Discussion",
