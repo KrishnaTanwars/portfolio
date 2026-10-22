@@ -55,6 +55,16 @@
   color: var(--accent-cyan);
   font-family: var(--font-mono);
   box-shadow: 0 0 12px rgba(56, 189, 248, 0.2);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.brand-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  display: block;
 }
 
 .brand-text {
@@ -216,6 +226,51 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+.hero-profile-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.hero-avatar-frame {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 2.5px;
+  background: linear-gradient(135deg, var(--accent-cyan), #3b82f6, #8b5cf6);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
+  flex-shrink: 0;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.hero-avatar-frame:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 26px rgba(56, 189, 248, 0.55);
+}
+
+.hero-avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  background-color: var(--bg-card);
+}
+
+.hero-status-beacon {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 13px;
+  height: 13px;
+  background-color: var(--accent-green);
+  border: 2px solid var(--bg-base);
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.8);
 }
 
 .hero-badge {
@@ -518,6 +573,88 @@
   grid-template-columns: 1.1fr 0.9fr;
   gap: 3rem;
   align-items: start;
+}
+
+.about-profile-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.35rem 1.5rem;
+  margin-bottom: 1.75rem;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.6), rgba(15, 23, 42, 0.8));
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 0 15px rgba(56, 189, 248, 0.08);
+}
+
+.about-photo-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.about-profile-photo {
+  width: 84px;
+  height: 84px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  border: 2px solid rgba(56, 189, 248, 0.4);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  display: block;
+}
+
+.about-photo-status {
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--accent-green);
+  background: #090d16;
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.about-profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.about-profile-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.about-profile-headline {
+  font-size: 0.875rem;
+  color: var(--accent-cyan);
+  font-weight: 600;
+}
+
+.about-profile-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.35rem;
+}
+
+.about-pill {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: var(--bg-pill);
+  border: 1px solid var(--border-subtle);
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--radius-full);
 }
 
 .about-paragraph {
@@ -1429,7 +1566,29 @@
   border-bottom: 2px solid rgba(56, 189, 248, 0.4);
   padding-bottom: 1.5rem;
   margin-bottom: 2rem;
-  text-align: center;
+}
+
+.resume-paper-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.75rem;
+  text-align: left;
+}
+
+.resume-paper-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2.5px solid var(--accent-cyan);
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.3);
+  flex-shrink: 0;
+}
+
+.resume-paper-meta-group {
+  display: flex;
+  flex-direction: column;
 }
 
 .resume-paper-name {
@@ -1806,6 +1965,36 @@
   padding: 1.75rem;
 }
 
+.contact-author-header {
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.contact-author-photo {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-cyan);
+  box-shadow: 0 0 14px rgba(56, 189, 248, 0.3);
+  flex-shrink: 0;
+}
+
+.contact-status-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-green);
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-full);
+}
+
 .contact-headline {
   font-size: 1.35rem;
   font-weight: 700;
@@ -2113,6 +2302,22 @@
   border-radius: var(--radius-md);
   padding: 1rem 1.25rem;
   margin-bottom: 1.25rem;
+}
+
+.doc-avatar-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1.5px solid rgba(56, 189, 248, 0.4);
+  flex-shrink: 0;
+}
+
+.doc-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .doc-icon {
@@ -2458,6 +2663,23 @@
     padding: 1.5rem;
   }
 
+  .resume-paper-header-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .about-profile-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+    padding: 1.25rem;
+  }
+
+  .about-profile-tags {
+    justify-content: center;
+  }
+
   .resume-paper-name {
     font-size: 1.75rem;
   }
@@ -2792,4 +3014,39 @@
   background: #f8fafc;
   border-color: rgba(15, 23, 42, 0.1);
 }
+
+[data-theme="light"] .about-profile-card {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .about-photo-status {
+  background: #ffffff;
+  border-color: rgba(34, 197, 94, 0.4);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .about-pill {
+  background: #f1f5f9;
+  border-color: rgba(15, 23, 42, 0.08);
+  color: var(--text-secondary);
+}
+
+[data-theme="light"] .resume-paper-avatar {
+  border-color: #0284c7;
+  box-shadow: 0 0 16px rgba(2, 132, 199, 0.2);
+}
+
+[data-theme="light"] .contact-author-photo {
+  border-color: #0284c7;
+  box-shadow: 0 0 12px rgba(2, 132, 199, 0.2);
+}
+
+[data-theme="light"] .contact-status-tag {
+  background: rgba(34, 197, 94, 0.1);
+  border-color: rgba(34, 197, 94, 0.35);
+  color: #16a34a;
+}
+
 

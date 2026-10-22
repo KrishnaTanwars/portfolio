@@ -69,6 +69,28 @@ export default function About() {
         <div className="about-grid">
           {/* Narrative Column */}
           <div className="about-text-column">
+            <div className="about-profile-card card">
+              <div className="about-photo-wrapper">
+                <img 
+                  src={personalInfo.photo || "/krishna.png"} 
+                  alt={personalInfo.name} 
+                  className="about-profile-photo" 
+                />
+                <div className="about-photo-status">
+                  <span className="status-dot"></span> Available
+                </div>
+              </div>
+              <div className="about-profile-details">
+                <h3 className="about-profile-name">{personalInfo.name}</h3>
+                <p className="about-profile-headline">{personalInfo.headline}</p>
+                <div className="about-profile-tags">
+                  <span className="about-pill">📍 {personalInfo.location}</span>
+                  <span className="about-pill">💼 SMAAC Net Solutions</span>
+                  <span className="about-pill">🎓 GLA University ('27)</span>
+                </div>
+              </div>
+            </div>
+
             {personalInfo.aboutParagraphs.map((paragraph, index) => (
               <p key={index} className="about-paragraph">
                 {paragraph}

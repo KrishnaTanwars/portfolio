@@ -120,9 +120,19 @@ Date:   Recent Engineering Sprint
       <div className="container hero-container">
         {/* Left Column: Text & CTAs */}
         <div className="hero-content">
-          <div className="hero-badge">
-            <span className="badge-glow"></span>
-            <span className="badge-text">{personalInfo.currentRole}</span>
+          <div className="hero-profile-row">
+            <div className="hero-avatar-frame">
+              <img 
+                src={personalInfo.photo || "/krishna.png"} 
+                alt={personalInfo.name} 
+                className="hero-avatar-img" 
+              />
+              <span className="hero-status-beacon" title="Available for Opportunities"></span>
+            </div>
+            <div className="hero-badge">
+              <span className="badge-glow"></span>
+              <span className="badge-text">{personalInfo.currentRole}</span>
+            </div>
           </div>
 
           <h1 className="hero-title">

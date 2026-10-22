@@ -71,7 +71,13 @@ export default function Navbar({ onOpenResume }) {
           onClick={(e) => handleNavClick(e, '#home')}
           aria-label="Krishna Tanwar Home"
         >
-          <div className="brand-avatar">KT</div>
+          <div className="brand-avatar">
+            {personalInfo.avatar ? (
+              <img src={personalInfo.avatar} alt={personalInfo.name} className="brand-avatar-img" />
+            ) : (
+              'KT'
+            )}
+          </div>
           <div className="brand-text">
             <span className="brand-name">{personalInfo.name}</span>
             <span className="brand-status">

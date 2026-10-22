@@ -35,15 +35,24 @@ export default function ResumeSection() {
         <div className="inpage-resume-paper card">
           {/* Resume Header */}
           <header className="resume-paper-header">
-            <h1 className="resume-paper-name">{personalInfo.name}</h1>
-            <p className="resume-paper-tagline">{personalInfo.headline}</p>
+            <div className="resume-paper-header-inner">
+              <img 
+                src={personalInfo.photo || "/krishna.png"} 
+                alt={personalInfo.name} 
+                className="resume-paper-avatar" 
+              />
+              <div className="resume-paper-meta-group">
+                <h1 className="resume-paper-name">{personalInfo.name}</h1>
+                <p className="resume-paper-tagline">{personalInfo.headline}</p>
 
-            <div className="resume-paper-contact-row">
-              <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
-              <span>•</span>
-              <a href={contactInfo.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <span>•</span>
-              <a href={contactInfo.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+                <div className="resume-paper-contact-row">
+                  <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
+                  <span>•</span>
+                  <a href={contactInfo.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  <span>•</span>
+                  <a href={contactInfo.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
             </div>
           </header>
 

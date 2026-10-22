@@ -8,6 +8,8 @@
 export const personalInfo = {
   name: "Krishna Tanwar",
   headline: "Software Developer | Python | SQL | AI/ML",
+  avatar: "/krishna.png",
+  photo: "/krishna.png",
   location: "India",
   email: "kstanwar0000@gmail.com",
   github: "https://github.com/KrishnaTanwars",

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { contactInfo } from '../data/portfolioData';
+import { contactInfo, personalInfo } from '../data/portfolioData';
 
 export default function Contact() {
   const [copiedEmail, setCopiedEmail] = useState(false);
@@ -57,7 +57,19 @@ export default function Contact() {
           {/* Left Column: Direct Channels */}
           <div className="contact-sidebar">
             <div className="contact-intro-card card">
-              <h3 className="contact-headline">{contactInfo.headline}</h3>
+              <div className="contact-author-header">
+                <img 
+                  src={personalInfo.photo || "/krishna.png"} 
+                  alt={personalInfo.name} 
+                  className="contact-author-photo" 
+                />
+                <div>
+                  <h3 className="contact-headline">{contactInfo.headline}</h3>
+                  <div className="contact-status-tag">
+                    <span className="status-dot"></span> Available for Roles
+                  </div>
+                </div>
+              </div>
               <p className="contact-subtext">{contactInfo.subtext}</p>
 
               <div className="location-indicator">
