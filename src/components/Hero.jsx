@@ -10,29 +10,39 @@ export default function Hero() {
 class SoftwareDeveloper:
     def __init__(self):
         self.name = "${personalInfo.name}"
-        self.headline = "${personalInfo.headline}"
-        self.current_role = "Graduate Engineer Trainee @ SMAAC Net Solutions"
-        self.education = "B.Tech CSE (AI/ML) · GLA University '27"
-        self.languages = ["Python", "SQL", "Java", "JavaScript"]
+        self.role = "Software Developer"
+        self.location = "Gurgaon, Haryana"
+        self.current_role = "${personalInfo.currentRole}"
+        self.core_focus = ["Python", "SQL", "HTML5", "CSS3", "JavaScript"]
+        self.backend = ["Flask", "REST APIs", "Enterprise Systems"]
         self.databases = ["MySQL", "PostgreSQL", "SQLite"]
-        self.technologies = ["RAG", "Whisper", "Power BI", "Flask", "OpenCV"]
+        self.analytics_ai = ["Power BI", "RAG", "OpenCV", "YOLOv3", "Whisper"]
 
     def get_status(self):
         return {
             "status": "Available for Software Engineering Roles",
-            "relocation": "Open to Remote & On-Site",
-            "passion": "Building scalable backend services & data-driven systems"
+            "location": "Gurgaon, Haryana",
+            "phone": "${personalInfo.phone}",
+            "email": "${personalInfo.email}",
+            "passion": "Building scalable backend services, databases & web apps"
         }`;
 
   const jsonSnippet = `{
   "developer": {
     "name": "${personalInfo.name}",
     "title": "Software Developer",
-    "specialization": "Python, Relational Databases, AI/ML & BI",
+    "location": "Gurgaon, Haryana",
     "organization": "SMAAC Net Solutions",
-    "academics": "GLA University (B.Tech '27)",
-    "repositories": 6,
-    "verified_open_source": true,
+    "phone": "${personalInfo.phone}",
+    "email": "${personalInfo.email}",
+    "core_focus": "Software development using Python, SQL, HTML, CSS, JS",
+    "skills": {
+      "languages_web": ["Python", "SQL", "JavaScript", "HTML5", "CSS3"],
+      "backend_frameworks": ["Flask", "REST APIs"],
+      "databases": ["MySQL", "PostgreSQL", "SQLite"],
+      "analytics_ai": ["Power BI", "Excel", "RAG", "OpenCV", "YOLOv3"]
+    },
+    "academics": "GLA University (B.Tech '27 · CGPA 8.3/10)",
     "available_for_hire": true
   }
 }`;
@@ -40,24 +50,24 @@ class SoftwareDeveloper:
   const terminalOutputs = {
     info: `$ python -m krishna_tanwar --info
 ✓ Profile: Krishna Tanwar (Software Developer)
-✓ Current Role: Graduate Engineer Trainee @ SMAAC Net Solutions
-✓ Work Availability: Open to Remote & On-Site
-✓ Education: GLA University (B.Tech CSE AI/ML '27)
-✓ Core Focus: Python Backend, Relational Databases & SQL, AI/ML, BI
-✓ Status: Ready for software engineering opportunities`,
+✓ Current Location: Gurgaon, Haryana
+✓ Role: Graduate Engineer Trainee @ SMAAC Net Solutions
+✓ Phone: +91 6395005796 | Email: kstanwar0000@gmail.com
+✓ Core Focus: Software development using Python, SQL, HTML, CSS, JS
+✓ Education: GLA University, Mathura (B.Tech CSE AI/ML '27 · CGPA 8.3/10)
+✓ Status: Available for Software Engineering Roles`,
     stack: `$ check-stack --full
-[Languages]   Python (Primary), SQL (Primary), Java, JavaScript
-[Backend]     Flask, REST APIs, Object-Oriented Architecture
-[Databases]   MySQL, PostgreSQL, SQLite, Star Schema Design
-[AI & ML]     RAG, Local Ollama, Whisper, OpenCV, YOLO
-[Analytics]   Power BI, DAX, Power Query, Pandas, Excel`,
+[Languages & Web] Python, SQL, JavaScript, HTML5, CSS3
+[Backend]         Flask, REST APIs, System Architecture
+[Databases]       MySQL, PostgreSQL, SQLite, Star Schema Design
+[Analytics & BI]  Power BI, Advanced Excel, DAX, Power Query
+[AI & ML]         RAG, Whisper, OpenCV, YOLOv3, TensorFlow, Ollama`,
     git: `$ git log -1 --stat
 commit 8f2c19a (HEAD -> main, origin/main)
 Author: Krishna Tanwar <kstanwar0000@gmail.com>
-Date:   Recent Engineering Sprint
+Date:   Software Engineering Sprint
 
-    feat: production RAG assistant & real-time computer vision
-    6 files changed, 1420 insertions(+), 0 deletions(-)
+    feat: RAG Assistant, Computer Vision & Full-Stack Systems
     Status: All automated checks passed (100% verified)`
   };
 
@@ -222,11 +232,22 @@ Date:   Recent Engineering Sprint
               className="social-link"
               aria-label="Send Email"
             >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                 <polyline points="22,6 12,13 2,6"></polyline>
               </svg>
               <span>Email</span>
+            </a>
+
+            <a 
+              href={`tel:${personalInfo.phone.replace(/[\s+]/g, '')}`}
+              className="social-link"
+              aria-label="Call Phone"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>{personalInfo.phone}</span>
             </a>
           </div>
         </div>

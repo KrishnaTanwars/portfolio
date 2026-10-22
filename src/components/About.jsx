@@ -10,8 +10,8 @@ export default function About() {
           <polyline points="8 6 2 12 8 18"></polyline>
         </svg>
       ),
-      title: "Software & Backend Development",
-      description: "Building scalable backend services, structured logic, and RESTful APIs using Python and Java with clean architecture and maintainability."
+      title: "Software & Web Development",
+      description: "Building scalable backend services, structured application logic, and modern web interfaces using Python, SQL, HTML5, CSS3, and JavaScript."
     },
     {
       icon: (
@@ -33,7 +33,7 @@ export default function About() {
         </svg>
       ),
       title: "Business Intelligence & Analytics",
-      description: "Translating complex operational datasets into interactive Power BI dashboards, KPI models, and stakeholder-ready reports."
+      description: "Translating complex operational datasets into interactive Power BI dashboards, KPI models, and automated reporting workflows with Excel & DAX."
     },
     {
       icon: (
@@ -62,7 +62,7 @@ export default function About() {
           <span className="section-tag">About Me</span>
           <h2 className="section-title">Engineering mindset backed by practical execution.</h2>
           <p className="section-subtitle">
-            A developer who bridges software engineering, database architectures, and business intelligence.
+            A software developer who bridges backend engineering, relational databases, web development, and business analytics.
           </p>
         </div>
 
@@ -86,7 +86,7 @@ export default function About() {
                 <div className="about-profile-tags">
                   <span className="about-pill">📍 {personalInfo.location}</span>
                   <span className="about-pill">💼 SMAAC Net Solutions</span>
-                  <span className="about-pill">🎓 GLA University ('27)</span>
+                  <span className="about-pill">🎓 GLA University ('27 · 8.3 CGPA)</span>
                 </div>
               </div>
             </div>
@@ -101,15 +101,22 @@ export default function About() {
               <div className="credential-item">
                 <span className="cred-icon">🎓</span>
                 <div>
-                  <strong>B.Tech in Computer Science Engineering (AI/ML)</strong>
-                  <p>GLA University · Expected Graduation: 2027</p>
+                  <strong>B.Tech in Computer Science & Engineering (AI/ML)</strong>
+                  <p>GLA University, Mathura · CGPA: 8.3 / 10 · Expected Graduation: 2027</p>
                 </div>
               </div>
               <div className="credential-item">
                 <span className="cred-icon">💼</span>
                 <div>
                   <strong>Graduate Engineer Trainee</strong>
-                  <p>SMAAC Net Solutions · Software & Enterprise Development</p>
+                  <p>SMAAC Net Solutions (Gurgaon, Haryana) · Software Development</p>
+                </div>
+              </div>
+              <div className="credential-item">
+                <span className="cred-icon">📊</span>
+                <div>
+                  <strong>Internship Experience</strong>
+                  <p>AtliQ Technologies (Data Analyst Intern) & SkillCred (AI & Analytics Intern)</p>
                 </div>
               </div>
             </div>

@@ -69,7 +69,7 @@ export default function Skills() {
           <span className="section-tag">Technical Competencies</span>
           <h2 className="section-title">Skills & Tooling Matrix</h2>
           <p className="section-subtitle">
-            Categorized technical capabilities spanning backend software development, relational database engineering, AI/ML pipelines, and enterprise BI.
+            Categorized technical capabilities spanning Python, SQL, JavaScript, HTML5/CSS3, backend engineering, Power BI analytics, and applied AI/ML systems.
           </p>
         </div>
 
@@ -82,7 +82,7 @@ export default function Skills() {
             </svg>
             <input
               type="text"
-              placeholder="Search skills (e.g. Python, SQL, RAG, Power BI, OpenCV)..."
+              placeholder="Search skills (e.g. Python, SQL, JavaScript, HTML, Power BI, RAG)..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="skills-search-input"

@@ -20,7 +20,7 @@ export default function Projects() {
           <span className="section-tag">Featured Engineering Work</span>
           <h2 className="section-title">Selected Projects</h2>
           <p className="section-subtitle">
-            Production-grade software systems, computer vision pipelines, local RAG architectures, and enterprise business intelligence dashboards.
+            Software applications, applied AI/ML systems, and data analytics platforms built with Python, SQL, and modern engineering tools.
           </p>
         </div>
 

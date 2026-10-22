@@ -39,6 +39,11 @@ export default function Footer() {
                 Email
               </a>
             </li>
+            <li>
+              <a href={`tel:${personalInfo.phone.replace(/[\s+]/g, '')}`}>
+                Phone
+              </a>
+            </li>
           </ul>
 
           <button

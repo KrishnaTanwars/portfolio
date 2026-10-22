@@ -10,7 +10,7 @@ html_content = """<!DOCTYPE html>
 <style>
   @page {
     size: A4;
-    margin: 12mm 15mm;
+    margin: 8mm 12mm;
   }
   * {
     box-sizing: border-box;
@@ -20,35 +20,35 @@ html_content = """<!DOCTYPE html>
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #1e293b;
-    line-height: 1.4;
-    font-size: 10pt;
+    line-height: 1.34;
+    font-size: 8.9pt;
     background: #ffffff;
   }
   .header {
     text-align: center;
     border-bottom: 2px solid #0284c7;
-    padding-bottom: 8px;
-    margin-bottom: 12px;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
   }
   .name {
-    font-size: 22pt;
+    font-size: 19pt;
     font-weight: 800;
     color: #0f172a;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.3px;
     margin-bottom: 2px;
   }
-  .tagline {
-    font-size: 10.5pt;
+  .location-bar {
+    font-size: 8.2pt;
     font-weight: 600;
     color: #0284c7;
-    margin-bottom: 6px;
+    margin-bottom: 3px;
   }
   .contact-bar {
-    font-size: 8.5pt;
+    font-size: 8.2pt;
     color: #475569;
     display: flex;
     justify-content: center;
-    gap: 14px;
+    gap: 12px;
     flex-wrap: wrap;
   }
   .contact-bar a {
@@ -56,18 +56,25 @@ html_content = """<!DOCTYPE html>
     text-decoration: none;
     font-weight: 500;
   }
+  .summary-text {
+    font-size: 8.4pt;
+    color: #334155;
+    line-height: 1.38;
+    margin-bottom: 8px;
+    text-align: justify;
+  }
   .section {
-    margin-bottom: 11px;
+    margin-bottom: 7px;
   }
   .section-title {
-    font-size: 11pt;
+    font-size: 9.8pt;
     font-weight: 700;
     color: #0f172a;
     text-transform: uppercase;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.6px;
     border-bottom: 1px solid #e2e8f0;
     padding-bottom: 2px;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -76,22 +83,22 @@ html_content = """<!DOCTYPE html>
     content: "";
     display: inline-block;
     width: 4px;
-    height: 12px;
+    height: 11px;
     background: #0284c7;
     border-radius: 2px;
   }
   .item {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
   }
   .item-header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 2px;
+    margin-bottom: 1.5px;
   }
   .item-title {
     font-weight: 700;
-    font-size: 10pt;
+    font-size: 9pt;
     color: #0f172a;
   }
   .item-org {
@@ -99,15 +106,15 @@ html_content = """<!DOCTYPE html>
     color: #0284c7;
   }
   .item-date {
-    font-size: 8.5pt;
+    font-size: 8.2pt;
     color: #64748b;
     font-weight: 500;
   }
   .item-subtitle {
-    font-size: 8.5pt;
+    font-size: 8.2pt;
     color: #475569;
     font-style: italic;
-    margin-bottom: 3px;
+    margin-bottom: 1.5px;
   }
   ul {
     list-style: none;
@@ -115,11 +122,11 @@ html_content = """<!DOCTYPE html>
   }
   li {
     position: relative;
-    padding-left: 14px;
-    font-size: 9pt;
+    padding-left: 12px;
+    font-size: 8.35pt;
     color: #334155;
-    margin-bottom: 2px;
-    line-height: 1.35;
+    margin-bottom: 1.5px;
+    line-height: 1.3;
   }
   li::before {
     content: "•";
@@ -130,32 +137,25 @@ html_content = """<!DOCTYPE html>
   }
   .skills-table {
     width: 100%;
-    font-size: 9pt;
+    font-size: 8.35pt;
     border-collapse: collapse;
   }
   .skills-table td {
-    padding: 2.5px 0;
+    padding: 1.5px 0;
     vertical-align: top;
   }
   .skill-cat {
-    width: 22%;
+    width: 26%;
     font-weight: 700;
     color: #0f172a;
   }
   .skill-vals {
-    width: 78%;
+    width: 74%;
     color: #334155;
   }
-  .tech-pill {
-    display: inline-block;
-    background: #f1f5f9;
-    border: 1px solid #cbd5e1;
-    border-radius: 3px;
-    padding: 0 4px;
-    font-size: 7.5pt;
-    font-weight: 600;
-    color: #334155;
-    margin-left: 4px;
+  .cert-row {
+    font-size: 8.35pt;
+    margin-bottom: 1.5px;
   }
 </style>
 </head>
@@ -163,11 +163,135 @@ html_content = """<!DOCTYPE html>
 
 <div class="header">
   <div class="name">KRISHNA TANWAR</div>
-  <div class="tagline">Software Developer | Python & Backend Engineering | Relational Databases & SQL | AI/ML</div>
+  <div class="location-bar">
+    Hometown: Kosi Kalan, Mathura, Uttar Pradesh &nbsp;|&nbsp; Current Location: Gurgaon, Haryana
+  </div>
   <div class="contact-bar">
+    <span>📞 +91 6395005796</span>
     <span>✉️ <a href="mailto:kstanwar0000@gmail.com">kstanwar0000@gmail.com</a></span>
-    <span>💼 <a href="https://linkedin.com/in/krishnatanwars">linkedin.com/in/krishnatanwars</a></span>
-    <span>💻 <a href="https://github.com/KrishnaTanwars">github.com/KrishnaTanwars</a></span>
+    <span>💼 <a href="https://linkedin.com/in/krishnatanwars">LinkedIn</a></span>
+    <span>💻 <a href="https://github.com/KrishnaTanwars">GitHub</a></span>
+  </div>
+</div>
+
+<div class="summary-text">
+  Software Developer and Graduate Engineer Trainee with hands-on experience in software development using Python, SQL, HTML, CSS, and JavaScript. Experienced in building backend services, relational database schemas, ETL pipelines, interactive Power BI dashboards, and AI-powered solutions using RAG, computer vision, and large language models.
+</div>
+
+<div class="section">
+  <div class="section-title">Technical Skills</div>
+  <table class="skills-table">
+    <tr>
+      <td class="skill-cat">● Languages & Web:</td>
+      <td class="skill-vals">Python, SQL, JavaScript, HTML5, CSS3</td>
+    </tr>
+    <tr>
+      <td class="skill-cat">● Backend & Frameworks:</td>
+      <td class="skill-vals">Flask, REST APIs, React, JSON, SQLite</td>
+    </tr>
+    <tr>
+      <td class="skill-cat">● Databases & Storage:</td>
+      <td class="skill-vals">MySQL, PostgreSQL, SQLite, Star Schema Design</td>
+    </tr>
+    <tr>
+      <td class="skill-cat">● Data Analytics & BI:</td>
+      <td class="skill-vals">Microsoft Excel, Power BI, NumPy, Pandas, DAX, Power Query</td>
+    </tr>
+    <tr>
+      <td class="skill-cat">● AI & Machine Learning:</td>
+      <td class="skill-vals">LLMs, RAG, TensorFlow, OpenCV, YOLOv3, Whisper, Ollama</td>
+    </tr>
+    <tr>
+      <td class="skill-cat">● Tools & Platforms:</td>
+      <td class="skill-vals">Git, GitHub, VS Code, ReportLab, Streamlit, Linux</td>
+    </tr>
+  </table>
+</div>
+
+<div class="section">
+  <div class="section-title">Professional Experience</div>
+
+  <div class="item">
+    <div class="item-header">
+      <div><span class="item-title">Graduate Engineer Trainee</span> — <span class="item-org">SMAAC Net Solutions</span></div>
+      <span class="item-date">Nov 2024 – Present | Gurgaon, Haryana</span>
+    </div>
+    <ul>
+      <li>Contributing to software development lifecycles focusing on Python, SQL, HTML, CSS, and JavaScript.</li>
+      <li>Developing backend logic, database schemas, and data pipelines for enterprise-grade applications.</li>
+      <li>Collaborating on engineering workflows, applying clean coding standards, and participating in peer code reviews.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <div><span class="item-title">Data Analyst Intern</span> — <span class="item-org">AtliQ Technologies</span></div>
+      <span class="item-date">Nov 2025 – Feb 2026 | India</span>
+    </div>
+    <ul>
+      <li>Performed data validation, cleansing, and normalization to maintain reporting accuracy.</li>
+      <li>Developed interactive Power BI dashboards and analytical reports for business decision-making.</li>
+      <li>Worked with SQL and Excel to support reporting and data analysis workflows.</li>
+      <li>Automated repetitive data preparation steps to reduce manual effort.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <div><span class="item-title">AI & Analytics Intern</span> — <span class="item-org">SkillCred</span></div>
+      <span class="item-date">May 2025 – Jul 2025 | Remote</span>
+    </div>
+    <ul>
+      <li>Built an AI-powered meeting transcription and summarization tool using Whisper and Ollama.</li>
+      <li>Developed computer vision pipelines using OpenCV and YOLOv3 for object detection tasks.</li>
+      <li>Designed RAG workflows for document-based question-answering with LLMs.</li>
+      <li>Preprocessed text, audio, and visual data for model training and evaluation.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Key Projects</div>
+
+  <div class="item">
+    <div class="item-header">
+      <div><span class="item-title">RAG Based AI Teaching Assistant</span> <span style="font-size:7.8pt; color:#64748b;">| Python, RAG, Whisper, Ollama, Vector DB</span></div>
+      <span class="item-date"><a href="https://github.com/KrishnaTanwars/rag-ai-teaching-assistant" style="color:#0284c7; text-decoration:none; font-weight:600;">GITHUB ↗</a></span>
+    </div>
+    <ul>
+      <li>Built a RAG teaching assistant transcribing lecture videos via Whisper and indexing semantic chunks in Ollama.</li>
+      <li>Retrieved timestamped answers via local LLMs to enable instant concept search across video recordings.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <div><span class="item-title">Real-Time Video Analysis System</span> <span style="font-size:7.8pt; color:#64748b;">| Python, Flask, OpenCV, YOLOv3, TensorFlow</span></div>
+      <span class="item-date"><a href="https://github.com/KrishnaTanwars/Real_Time_Video_Analysis_ML_Project" style="color:#0284c7; text-decoration:none; font-weight:600;">GITHUB ↗</a></span>
+    </div>
+    <ul>
+      <li>Real-time computer vision system performing concurrent human, vehicle, and emotion detection on live video.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <div><span class="item-title">AI Travel & Expense Analyzer</span> <span style="font-size:7.8pt; color:#64748b;">| Python, Streamlit, Pandas, Matplotlib, OpenAI</span></div>
+      <span class="item-date"><a href="https://github.com/KrishnaTanwars" style="color:#0284c7; text-decoration:none; font-weight:600;">GITHUB ↗</a></span>
+    </div>
+    <ul>
+      <li>Categorized expenses from CSV data with LLM-generated spending insights, budget summaries, and anomaly detection.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <div><span class="item-title">Automated Billing & Invoicing System</span> <span style="font-size:7.8pt; color:#64748b;">| Python, Tkinter, SQLite, ReportLab</span></div>
+      <span class="item-date"><a href="https://github.com/KrishnaTanwars" style="color:#0284c7; text-decoration:none; font-weight:600;">GITHUB ↗</a></span>
+    </div>
+    <ul>
+      <li>Desktop GUI application with dynamic PDF invoice generation, inventory tracking, and persistent SQLite database.</li>
+    </ul>
   </div>
 </div>
 
@@ -175,115 +299,32 @@ html_content = """<!DOCTYPE html>
   <div class="section-title">Education</div>
   <div class="item">
     <div class="item-header">
-      <span class="item-title">Bachelor of Technology (B.Tech) — Computer Science & Engineering</span>
-      <span class="item-date">2023 – 2027 (Expected)</span>
+      <span class="item-title">B.Tech in Computer Science and Engineering (AI & ML)</span>
+      <span class="item-date">Sep 2023 – Present (Exp. 2027)</span>
     </div>
-    <div class="item-subtitle">GLA University · Specialization in Artificial Intelligence & Machine Learning (AI/ML)</div>
-    <ul>
-      <li>Core Coursework: Data Structures & Algorithms, Object-Oriented Programming (Java/Python), Database Management Systems (SQL), Applied Machine Learning, Operating Systems & Computer Networks.</li>
-    </ul>
+    <div class="item-subtitle">GLA University, Mathura &nbsp;|&nbsp; <strong>CGPA: 8.3 / 10</strong></div>
+  </div>
+  <div class="item">
+    <div class="item-header">
+      <span class="item-title">Higher Secondary (Class XII, TSBIE)</span>
+      <span class="item-date">2021 – 2023</span>
+    </div>
+    <div class="item-subtitle">Sri Chaitanya Junior College, Hyderabad &nbsp;|&nbsp; Percentage: <strong>93%</strong></div>
+  </div>
+  <div class="item">
+    <div class="item-header">
+      <span class="item-title">High School (Class X, CBSE)</span>
+      <span class="item-date">2020 – 2021</span>
+    </div>
+    <div class="item-subtitle">A.K. Public School, Mathura &nbsp;|&nbsp; Percentage: <strong>95%</strong></div>
   </div>
 </div>
 
 <div class="section">
-  <div class="section-title">Professional Experience</div>
-  <div class="item">
-    <div class="item-header">
-      <div><span class="item-title">Graduate Engineer Trainee</span> — <span class="item-org">SMAAC Net Solutions</span></div>
-      <span class="item-date">Present</span>
-    </div>
-    <div class="item-subtitle">Full-time Software Development & Enterprise Engineering</div>
-    <ul>
-      <li>Contributing to backend software development, business logic modules, and database management workflows.</li>
-      <li>Adhering to clean code architecture, code review standards, and agile sprint delivery cycles.</li>
-      <li>Working with relational schemas and optimizing query operations for enterprise systems.</li>
-    </ul>
-  </div>
-  <div class="item">
-    <div class="item-header">
-      <div><span class="item-title">Data Analyst Intern</span> — <span class="item-org">AtliQ Technologies</span></div>
-      <span class="item-date">Nov 2025 – Feb 2026</span>
-    </div>
-    <div class="item-subtitle">Business Intelligence & Transactional Analytics</div>
-    <ul>
-      <li>Engineered executive Power BI dashboards with DAX measures and Power Query ETL pipelines across 100K+ transactional records.</li>
-      <li>Designed robust star-schema relational models connecting sales, customer demographics, and financial datasets.</li>
-      <li>Formulated SQL queries for cohort retention, margin analysis, and sales forecasting, enhancing executive reporting accuracy.</li>
-    </ul>
-  </div>
-</div>
-
-<div class="section">
-  <div class="section-title">Selected Technical Projects</div>
-  <div class="item">
-    <div class="item-header">
-      <div><span class="item-title">RAG AI Teaching Assistant</span> <span class="tech-pill">Python</span><span class="tech-pill">Ollama</span><span class="tech-pill">Whisper</span><span class="tech-pill">Vector Embeddings</span></div>
-      <span class="item-date"><a href="https://github.com/KrishnaTanwars/rag-ai-teaching-assistant">GitHub Repo</a></span>
-    </div>
-    <ul>
-      <li>Engineered an automated video tutorial RAG assistant using Whisper speech-to-text and local Ollama vector embeddings.</li>
-      <li>Chunked subtitle transcripts with semantic windowing, returning precise video timestamp citations for student questions.</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <div class="item-header">
-      <div><span class="item-title">Smart Traffic Violation AI Platform</span> <span class="tech-pill">Python</span><span class="tech-pill">YOLO</span><span class="tech-pill">EasyOCR</span><span class="tech-pill">React</span><span class="tech-pill">SQLite</span></div>
-      <span class="item-date"><a href="https://github.com/KrishnaTanwars/Smart_Traffic_Violation_AI">GitHub Repo</a></span>
-    </div>
-    <ul>
-      <li>Developed full-stack violation detection platform with YOLO vehicle tracking, license plate OCR, and automatic rule-checking.</li>
-      <li>Integrated SQLite case logging database and React dashboard for audit history and automated citation generation.</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <div class="item-header">
-      <div><span class="item-title">Real-Time Video Multi-Class Detection System</span> <span class="tech-pill">Python</span><span class="tech-pill">OpenCV</span><span class="tech-pill">YOLO</span><span class="tech-pill">Flask</span></div>
-      <span class="item-date"><a href="https://github.com/KrishnaTanwars/Real_Time_Video_Analysis_ML_Project">GitHub Repo</a></span>
-    </div>
-    <ul>
-      <li>Implemented multi-threaded real-time streaming pipeline supporting vehicle detection, human tracking, and motion detection.</li>
-      <li>Built configurable performance profiles (fast, balanced, accurate) with web-based feed monitoring.</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <div class="item-header">
-      <div><span class="item-title">Business Insights 360 Enterprise BI</span> <span class="tech-pill">Power BI</span><span class="tech-pill">DAX</span><span class="tech-pill">SQL</span><span class="tech-pill">Data Modeling</span></div>
-      <span class="item-date"><a href="https://github.com/KrishnaTanwars/Business-Insights-360-PowerBI-Dashboard">GitHub Repo</a></span>
-    </div>
-    <ul>
-      <li>Created unified cross-functional BI suite for AtliQ Hardwares spanning Finance, Sales, Marketing, and Supply Chain.</li>
-      <li>Engineered dynamic time-intelligence DAX measures replacing manual spreadsheets with real-time analytics.</li>
-    </ul>
-  </div>
-</div>
-
-<div class="section">
-  <div class="section-title">Technical Skills</div>
-  <table class="skills-table">
-    <tr>
-      <td class="skill-cat">Languages:</td>
-      <td class="skill-vals">Python, SQL, Java, JavaScript, HTML5, CSS3</td>
-    </tr>
-    <tr>
-      <td class="skill-cat">Backend & Frameworks:</td>
-      <td class="skill-vals">Flask, REST APIs, Object-Oriented Architecture, System Design Fundamentals</td>
-    </tr>
-    <tr>
-      <td class="skill-cat">Databases & Storage:</td>
-      <td class="skill-vals">MySQL, PostgreSQL, SQLite, Database Normalization, Schema Design, Query Optimization</td>
-    </tr>
-    <tr>
-      <td class="skill-cat">AI / ML & Computer Vision:</td>
-      <td class="skill-vals">RAG (Retrieval-Augmented Generation), Whisper, Ollama, OpenCV, YOLO, TensorFlow, Vector Embeddings</td>
-    </tr>
-    <tr>
-      <td class="skill-cat">Analytics & Tools:</td>
-      <td class="skill-vals">Power BI, DAX, Power Query, Pandas, NumPy, Excel, Git, GitHub, VS Code</td>
-    </tr>
-  </table>
+  <div class="section-title">Certifications</div>
+  <div class="cert-row">● <strong>Applied Machine Learning in Python</strong> — Coursera &nbsp;|&nbsp; ● <strong>Data Analytics with Python</strong> — NPTEL</div>
+  <div class="cert-row">● <strong>Python for Data Science</strong> — Cognitive Class &nbsp;|&nbsp; ● <strong>Power BI Data Analytics 3.0</strong> — Codebasics</div>
+  <div class="cert-row">● <strong>SQL (Intermediate)</strong> & <strong>Python (Basic)</strong> — HackerRank</div>
 </div>
 
 </body>

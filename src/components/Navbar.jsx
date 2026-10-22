@@ -46,6 +46,24 @@ export default function Navbar({ onOpenResume }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        setMobileMenuOpen(false);
+      }
+    };
+    if (mobileMenuOpen) {
+      window.addEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = '';
+    };
+  }, [mobileMenuOpen]);
+
   const handleNavClick = (e, href) => {
     e.preventDefault();
     setMobileMenuOpen(false);
@@ -177,10 +195,16 @@ export default function Navbar({ onOpenResume }) {
         </div>
       </div>
 
-      {/* Mobile Dropdown Menu */}
+      {/* Mobile Dropdown Menu with Backdrop */}
       {mobileMenuOpen && (
-        <div className="mobile-menu">
-          <ul className="mobile-nav-links">
+        <>
+          <div 
+            className="mobile-backdrop" 
+            onClick={() => setMobileMenuOpen(false)}
+            aria-hidden="true"
+          />
+          <div className="mobile-menu" id="mobile-menu-dropdown">
+            <ul className="mobile-nav-links">
             {navigationLinks.map((link) => (
               <li key={link.name}>
                 <a
@@ -240,6 +264,7 @@ export default function Navbar({ onOpenResume }) {
             </li>
           </ul>
         </div>
+        </>
       )}
     </header>
   );
