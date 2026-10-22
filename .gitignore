@@ -36,5 +36,8 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
-Thumbs.db
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
 
