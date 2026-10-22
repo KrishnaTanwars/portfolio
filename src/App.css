@@ -1883,16 +1883,27 @@
 
 .resume-paper-cert-item {
   display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
+  align-items: flex-start;
+  gap: 0.55rem;
   font-size: 0.875rem;
   color: var(--text-primary);
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  line-height: 1.5;
 }
 
 .cert-bullet {
   color: var(--status-success);
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+  margin-top: 0.22rem;
+  line-height: 1;
+}
+
+.cert-title {
+  flex: 1;
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .cert-meta {
