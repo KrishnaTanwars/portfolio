@@ -353,7 +353,7 @@ html_content = """<!DOCTYPE html>
   <div class="section-title">Certifications & Achievements</div>
   <div class="cert-row">● <strong>HackerRank SQL Gold Badge (5 Stars)</strong> &nbsp;|&nbsp; ● <strong>1st Runner-Up — Data Analytics & Visualization Hackathon</strong> (Smart Agrofarm)</div>
   <div class="cert-row">● <strong>SQL (Intermediate)</strong>, <strong>Problem Solving (Intermediate)</strong>, <strong>Problem Solving (Basic)</strong> & <strong>Python (Basic)</strong> — HackerRank</div>
-  <div class="cert-row">● <strong>Power BI Data Analytics 3.0</strong> — Codebasics &nbsp;|&nbsp; ● <strong>Data Science & Analytics</strong> — Cognitive Class</div>
+  <div class="cert-row">● <strong>Power BI Data Analytics 3.0</strong> — Codebasics &nbsp;|&nbsp; ● <strong>Data Science & Analytics</strong> — HP LIFE</div>
   <div class="cert-row">● <strong>Applied Machine Learning in Python</strong> — Coursera &nbsp;|&nbsp; ● <strong>Data Analytics with Python</strong> — NPTEL</div>
 </div>
 

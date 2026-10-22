@@ -421,7 +421,7 @@ export const certifications = [
   },
   {
     title: "Data Science & Analytics",
-    issuer: "Cognitive Class",
+    issuer: "HP LIFE",
     status: "Verified",
     description: "Data manipulation with Pandas and NumPy, exploratory data analysis, and predictive workflows.",
     skills: ["Python", "Pandas", "NumPy", "Data Science"]
