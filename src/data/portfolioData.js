@@ -153,7 +153,7 @@ export const projects = [
       "An offline-first desktop ERP and fee management system designed for Indian schools, colleges, and educational institutions. Supports academic hierarchy management, student records, dynamic fee structures, receipt generation, financial reporting, role-based access, and database backup and recovery.",
     technologies: ["Python", "PySide6", "SQLite", "SQLAlchemy", "ReportLab", "openpyxl", "PyInstaller"],
     repoUrl: "https://github.com/KrishnaTanwars/SchoolFeeManager",
-    verified: false,
+    verified: true,
     highlights: [
       "School and college academic structures: departments, courses, branches, semesters, and sessions",
       "Student directory, enrollment records, batch tracking, and academic promotion workflows",
@@ -171,8 +171,8 @@ export const projects = [
     description:
       "A local-first AI-powered job application assistant designed to streamline job discovery and application workflows. It extracts structured information from job alerts, evaluates candidate eligibility, matches resume variants, and assists with application forms through browser automation and human review.",
     technologies: ["Next.js", "React", "TypeScript", "MongoDB", "Mongoose", "Playwright", "Gemini", "Zod", "Vitest"],
-    repoUrl: null,
-    verified: false,
+    repoUrl: "https://github.com/KrishnaTanwars/ApplyPilot_AI",
+    verified: true,
     highlights: [
       "Job alert parsing and URL extraction from incoming notification feeds",
       "AI-assisted job qualification extraction, role eligibility, and resume matching",
@@ -190,8 +190,8 @@ export const projects = [
     description:
       "A Windows desktop video compression utility designed to process video files locally using FFmpeg. Provides configurable compression presets, resolution and audio controls, batch processing, progress tracking, and output file protection.",
     technologies: ["Electron", "React", "TypeScript", "FFmpeg", "FFprobe", "Vite"],
-    repoUrl: null,
-    verified: false,
+    repoUrl: "https://github.com/KrishnaTanwars/compressify",
+    verified: true,
     highlights: [
       "Offline video compression running entirely on local machine hardware via FFmpeg",
       "Multiple encoding presets with custom resolution, bitrate, and audio controls",
