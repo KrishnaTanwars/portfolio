@@ -144,14 +144,90 @@ export const projectCategories = [
 
 export const projects = [
   {
+    id: "edu-ledger-erp",
+    title: "EduLedger ERP — College Management System",
+    category: "software-ai",
+    categoryLabel: "Software Dev & Enterprise",
+    metricBadge: "Desktop ERP System",
+    description:
+      "An offline-first desktop ERP and fee management system designed for Indian schools, colleges, and educational institutions. Supports academic hierarchy management, student records, dynamic fee structures, receipt generation, financial reporting, role-based access, and database backup and recovery.",
+    technologies: ["Python", "PySide6", "SQLite", "SQLAlchemy", "ReportLab", "openpyxl", "PyInstaller"],
+    repoUrl: "https://github.com/KrishnaTanwars/SchoolFeeManager",
+    verified: false,
+    highlights: [
+      "School and college academic structures: departments, courses, branches, semesters, and sessions",
+      "Student directory, enrollment records, batch tracking, and academic promotion workflows",
+      "Itemized fee collection, concession tiers, late fine computation, and A4 PDF receipts",
+      "Financial reporting with CSV/Excel exports, role-based access control, and database backup & restore"
+    ],
+    architecture: "PySide6 Desktop UI ➔ Service Layer ➔ SQLAlchemy ORM ➔ SQLite Database ➔ ReportLab PDF & openpyxl Export"
+  },
+  {
+    id: "applypilot-ai",
+    title: "ApplyPilot AI — Intelligent Job Application Agent",
+    category: "software-ai",
+    categoryLabel: "Software Dev & AI/ML",
+    metricBadge: "AI Automation Agent",
+    description:
+      "A local-first AI-powered job application assistant designed to streamline job discovery and application workflows. It extracts structured information from job alerts, evaluates candidate eligibility, matches resume variants, and assists with application forms through browser automation and human review.",
+    technologies: ["Next.js", "React", "TypeScript", "MongoDB", "Mongoose", "Playwright", "Gemini", "Zod", "Vitest"],
+    repoUrl: null,
+    verified: false,
+    highlights: [
+      "Job alert parsing and URL extraction from incoming notification feeds",
+      "AI-assisted job qualification extraction, role eligibility, and resume matching",
+      "ATS-specific form adapters with browser automation using Playwright",
+      "Human-in-the-loop review interface for sensitive applicant questions and answer tracking"
+    ],
+    architecture: "Job Alert Feeds ➔ Gemini AI Extraction ➔ Resume Matcher ➔ Playwright Automation ➔ Human Review Gate"
+  },
+  {
+    id: "compressify-video-compressor",
+    title: "Compressify — Offline Video Compressor",
+    category: "software-ai",
+    categoryLabel: "Software Dev & Desktop App",
+    metricBadge: "Desktop Utility",
+    description:
+      "A Windows desktop video compression utility designed to process video files locally using FFmpeg. Provides configurable compression presets, resolution and audio controls, batch processing, progress tracking, and output file protection.",
+    technologies: ["Electron", "React", "TypeScript", "FFmpeg", "FFprobe", "Vite"],
+    repoUrl: null,
+    verified: false,
+    highlights: [
+      "Offline video compression running entirely on local machine hardware via FFmpeg",
+      "Multiple encoding presets with custom resolution, bitrate, and audio controls",
+      "Batch compression queue with real-time encoding progress and cancellation support",
+      "MP4 output encoding using H.264 & AAC with original file protection mechanisms"
+    ],
+    architecture: "Electron React UI ➔ Main IPC Process ➔ Local FFmpeg/FFprobe Worker ➔ Real-Time Progress Stream ➔ Output MP4"
+  },
+  {
+    id: "carpooling-platform",
+    title: "CarPooling — Full-Stack Ride Sharing Platform",
+    category: "software-ai",
+    categoryLabel: "Software Dev & Full-Stack",
+    metricBadge: "MERN Stack",
+    description:
+      "A collaborative full-stack ride-sharing platform that connects drivers and passengers traveling along similar routes. Includes ride publishing, route-based search, booking requests, authentication, and ride management workflows.",
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", "Mongoose", "Tailwind CSS"],
+    repoUrl: "https://github.com/KrishnaTanwars/ProjectDev-Batch1",
+    verified: true,
+    highlights: [
+      "Role-based authentication with dedicated driver and rider account workflows",
+      "Dynamic ride publishing, route-based search, and real-time seat availability tracking",
+      "Seat reservation lifecycle with interactive driver approval and rejection controls",
+      "MongoDB Atlas data modeling for user profiles, routes, vehicles, and booking history"
+    ],
+    architecture: "React Client ➔ Express REST API ➔ JWT Auth & Controller Logic ➔ MongoDB Atlas Database"
+  },
+  {
     id: "rag-ai-assistant",
-    title: "RAG Based AI Teaching Assistant",
+    title: "RAG-Based AI Teaching Assistant",
     category: "software-ai",
     categoryLabel: "Software Dev & AI/ML",
     metricBadge: "RAG + Local LLM",
     description:
-      "A Retrieval-Augmented Generation (RAG) based AI teaching assistant that transcribes video lectures with Whisper into searchable knowledge, generates vector embeddings with Ollama, and retrieves timestamped answers via a local LLM.",
-    technologies: ["Python", "RAG", "Whisper", "Ollama", "Vector Embeddings", "LLMs"],
+      "A retrieval-augmented AI teaching assistant that transforms educational video lectures into searchable knowledge. Uses transcription, embeddings, and retrieval to help users ask questions and find relevant lecture content with timestamped references.",
+    technologies: ["Python", "RAG", "Whisper", "Vector Embeddings", "Ollama"],
     repoUrl: "https://github.com/KrishnaTanwars/rag-ai-teaching-assistant",
     verified: true,
     highlights: [
@@ -168,13 +244,13 @@ export const projects = [
     categoryLabel: "Software Dev & AI/ML",
     metricBadge: "Real-Time Vision",
     description:
-      "A real-time computer vision web application capable of analyzing live video streams. Features multi-class detection including human detection, object detection, vehicle detection, emotion recognition, and motion detection.",
+      "A real-time computer vision application for analyzing video streams and identifying objects, people, vehicles, and movement patterns. Demonstrates practical video processing and AI-assisted visual analysis.",
     technologies: ["Python", "Flask", "OpenCV", "YOLOv3", "TensorFlow", "HTML5", "CSS3", "JavaScript"],
     repoUrl: "https://github.com/KrishnaTanwars/Real_Time_Video_Analysis_ML_Project",
     verified: true,
     highlights: [
       "Real-time video frame inference with OpenCV, YOLOv3, and TensorFlow deep learning models",
-      "Designed the system to support multiple computer vision tasks concurrently from a single unified application",
+      "Multi-task detection pipelines: human detection, object classification, vehicle tracking, and motion analysis",
       "Interactive Flask web dashboard displaying live bounding boxes and detection results"
     ],
     architecture: "Live RTSP / Video Feed ➔ OpenCV Processing ➔ YOLOv3 & TensorFlow Inference ➔ Flask Web Interface"
@@ -186,13 +262,13 @@ export const projects = [
     categoryLabel: "Software Dev & AI/ML",
     metricBadge: "OCR & Rule Engine",
     description:
-      "An automated traffic monitoring and violation detection platform combining a Python backend and React/JavaScript frontend. Features vehicle detection, license plate OCR, and automated rule checking for red lights and speeding.",
-    technologies: ["Python", "YOLO", "EasyOCR", "JavaScript", "React", "SQLite", "REST APIs"],
+      "An AI-assisted traffic monitoring application that combines vehicle detection, license plate recognition, and rule-based violation analysis to identify potential traffic violations from video input.",
+    technologies: ["Python", "React", "JavaScript", "YOLO", "EasyOCR", "SQLite", "REST APIs"],
     repoUrl: "https://github.com/KrishnaTanwars/Smart_Traffic_Violation_AI",
     verified: true,
     highlights: [
       "Automated plate number recognition with EasyOCR and YOLO vehicle bounding",
-      "Rule engine checking red-light and speed violations with image evidence",
+      "Rule engine evaluating traffic rules and violation evidence logging",
       "Full-stack architecture with responsive dashboard and SQLite audit log"
     ],
     architecture: "Camera Stream ➔ YOLO Vehicle Bounding ➔ EasyOCR Plate Read ➔ Traffic Rule Engine ➔ SQLite Audit DB ➔ React Client"
@@ -204,14 +280,14 @@ export const projects = [
     categoryLabel: "Data Analytics & BI",
     metricBadge: "100K+ Transactions · SQL",
     description:
-      "A comprehensive relational database analytics project evaluating 100K+ sales transactions. Developed 20+ SQL business queries using CTEs, Window Functions, Joins, Subqueries, and CASE statements to analyze sales, customers, products, and markets.",
+      "A SQL-based analytics project focused on sales performance, customer behavior, and business trends. Uses relational queries, joins, aggregations, subqueries, CTEs, and window functions to derive actionable insights from transactional data.",
     technologies: ["SQL", "MySQL", "CTEs", "Window Functions", "Subqueries", "Data Analytics"],
     repoUrl: "https://github.com/KrishnaTanwars/Sales-Customer-Performance-Analytics-",
     verified: true,
     highlights: [
-      "Analyzed 100K+ sales transactions across customers, products, and markets using MySQL",
-      "Authored 20+ complex business queries utilizing CTEs, Window Functions, Joins, and aggregations",
-      "Conducted customer ranking, market-level achievement %, and variance analysis to drive business decisions"
+      "Analyzed 100K+ sales transactions across customers, products, and regional markets using MySQL",
+      "Authored 20+ advanced SQL queries utilizing CTEs, Window Functions, multi-table joins, and aggregations",
+      "Conducted customer segmentation, market-level target variance analysis, and KPI calculations"
     ],
     architecture: "100K+ Transactional DB ➔ Advanced SQL (CTEs, Windowing) ➔ Customer & Market Segmentation ➔ KPI Aggregation"
   },
@@ -220,9 +296,9 @@ export const projects = [
     title: "Business Insights 360",
     category: "data-bi",
     categoryLabel: "Data Analytics & BI",
-    metricBadge: "Star Schema & 15+ KPIs",
+    metricBadge: "Enterprise BI Dashboard",
     description:
-      "An enterprise cross-functional Power BI dashboard built for AtliQ Hardwares, providing a unified analytical view across Finance, Sales, Marketing, and Supply Chain to replace static spreadsheets with interactive real-time BI.",
+      "A cross-functional business intelligence dashboard developed around the AtliQ Hardwares business scenario, integrating insights across Finance, Sales, Marketing, and Supply Chain to support data-driven decision-making.",
     technologies: ["Power BI", "DAX", "Power Query", "Data Modeling", "Excel", "Business Intelligence"],
     repoUrl: "https://github.com/KrishnaTanwars/Business-Insights-360-PowerBI-Dashboard",
     verified: true,
@@ -238,52 +314,34 @@ export const projects = [
     title: "Shield Insurance BI Analytics Dashboard",
     category: "data-bi",
     categoryLabel: "Data Analytics & BI",
-    metricBadge: "Insurance Domain BI",
+    metricBadge: "Insurance Analytics",
     description:
-      "An end-to-end Power BI dashboard analyzing insurance customer and revenue trends across sales modes, customer age groups, and policies to support growth strategy and operational efficiency.",
+      "An interactive insurance business intelligence dashboard analyzing customer demographics, policy performance, revenue trends, and sales channels to support business reporting and decision-making.",
     technologies: ["Power BI", "DAX", "Power Query", "Insurance Analytics", "Data Modeling"],
     repoUrl: "https://github.com/KrishnaTanwars/Shield-Insurance-BI-Dashboard-PowerBI",
     verified: true,
     highlights: [
       "Analyzed customer growth, revenue trends, and sales modes across multiple insurance policies",
-      "Built dynamic DAX measures for month-over-month growth and customer retention metrics",
-      "Designed interactive visual drill-downs for executive decision support"
+      "Built dynamic DAX measures for month-over-month growth, customer retention, and policy performance",
+      "Designed interactive visual drill-downs and demographic filters for executive decision support"
     ],
     architecture: "Insurance Transaction Data ➔ Power Query Transformation ➔ Star Schema Modeling ➔ DAX Measures ➔ BI Dashboard"
-  },
-  {
-    id: "smart-agrofarm",
-    title: "Smart Agrofarm Analytics (Hackathon Winner)",
-    category: "software-ai",
-    categoryLabel: "Software Dev & AI/ML",
-    metricBadge: "1st Runner-Up Hackathon",
-    description:
-      "A data-driven farm monitoring analytics platform that analyzes soil moisture, weather trends, and crop health metrics to present actionable KPIs supporting irrigation and yield optimization. Awarded 1st Runner-Up in the Data Analytics Hackathon.",
-    technologies: ["Python", "Pandas", "Plotly", "Data Visualization", "IoT Analytics"],
-    repoUrl: "https://github.com/KrishnaTanwars",
-    verified: true,
-    highlights: [
-      "Awarded 1st Runner-Up in the Data Analytics & Visualization Hackathon by Department of CEA, GLA University",
-      "Engineered data pipelines analyzing real-time sensor and environmental telemetry with Python & Pandas",
-      "Built interactive Plotly dashboards presenting actionable crop and irrigation KPIs under tight timelines"
-    ],
-    architecture: "Sensor Telemetry ➔ Python / Pandas Processing ➔ KPI Optimization Algorithms ➔ Plotly Interactive Visuals"
   },
   {
     id: "credit-card-financial-insights",
     title: "Credit Card Spend & Financial Insights",
     category: "data-bi",
     categoryLabel: "Data Analytics & BI",
-    metricBadge: "Financial KPI Dashboard",
+    metricBadge: "Financial Analytics",
     description:
-      "A financial intelligence Power BI dashboard analyzing credit card transactional flows, customer spending behavior across demographics, geographic distribution, and key revenue KPIs to support risk assessment and commercial strategy.",
+      "A financial analytics dashboard examining credit card transactions, customer spending patterns, revenue indicators, and demographic trends through interactive business intelligence reports.",
     technologies: ["Power BI", "DAX", "Power Query", "Financial Analytics", "Excel", "KPI Tracking"],
     repoUrl: "https://github.com/KrishnaTanwars/Credit-Card-Spend-and-Financial-Insights-PowerBI",
     verified: true,
     highlights: [
       "Customer spending segmentation by age, income, and card type across geographical markets",
-      "Transaction trend analysis, delinquency rate monitoring, and revenue KPI tracking",
-      "Interactive multi-page report with drill-through exploration"
+      "Transaction trend analysis, delinquency rate monitoring, and financial KPI reporting",
+      "Interactive multi-page dashboard filtering and drill-through exploration"
     ],
     architecture: "Card Transactional Data ➔ Data Cleaning in Power Query ➔ Metric Engineering ➔ Demographic Segmentation ➔ Drill-Through Dashboard"
   },
@@ -294,14 +352,14 @@ export const projects = [
     categoryLabel: "Data Analytics & BI",
     metricBadge: "Python & Pandas",
     description:
-      "Data analysis project evaluating operational revenue, occupancy rates, booking channels, and customer ratings for a luxury hotel chain to identify revenue leakage and optimize pricing strategies.",
-    technologies: ["Python", "Pandas", "Matplotlib", "Data Cleaning", "Business Analytics"],
+      "A hospitality analytics project examining hotel revenue, occupancy, booking channels, customer ratings, and operational performance. Uses Python-based data analysis to identify business trends and improvement opportunities.",
+    technologies: ["Python", "Pandas", "NumPy", "Data Visualization", "Matplotlib"],
     repoUrl: "https://github.com/KrishnaTanwars/Hospitality-Data-Analysis-Python",
     verified: true,
     highlights: [
-      "Cleaned and merged multi-source hotel booking and transactional datasets using Pandas",
+      "Cleaned and merged multi-source hotel booking and transactional datasets using Python & Pandas",
       "Calculated key hospitality metrics: RevPAR, ADR, Occupancy %, and Realization %",
-      "Identified critical booking channel discrepancies to improve overall realization rate"
+      "Identified critical booking channel trends to support revenue optimization and operational insights"
     ],
     architecture: "Raw Hotel Records ➔ Pandas Data Cleansing ➔ Metric Formulation (RevPAR, ADR) ➔ Visual Insights"
   }
